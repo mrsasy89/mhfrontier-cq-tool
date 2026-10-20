@@ -53,6 +53,43 @@ each existing screen rather than implementing a second version.
 The prior `64551d0.bin` repair set the pointer at `0xE8` to `0xB50` for that
 specific analyzed file. It is not a general repair recipe for arbitrary quests.
 
+## Translation modes: required behavior
+
+These requirements apply to the forthcoming translation integration. The current
+draft implements offline templates only; it does not yet call a cloud provider.
+
+- Manual editing of every Quest Strings field is always available.
+- Offline Objective and Success/Failure auto-fill remains a standard feature:
+  no API key, account, network connection or AI model is required.
+- AI translation is a separate, optional feature, disabled by default. Opening,
+  editing and saving quests must never require a provider.
+- The user selects individual fields or a batch, sees a preview, and explicitly
+  applies results. Preserve existing translations unless replacement is selected.
+- Display this notice before first cloud use and keep it accessible beside the
+  provider controls:
+
+  > AI translation is optional. Availability, rate limits and charges depend on
+  > your selected model and Gemini API project tier. Google AI Pro/Ultra app
+  > subscriptions do not automatically provide the same limits for this editor.
+
+- Never infer API tier from an app subscription or the model name "Pro". Do not
+  claim an exact remaining quota when the API does not expose it.
+- Pause on quota exhaustion and preserve batch progress. Retry temporary rate
+  limits with bounded backoff; do not silently switch provider, model or billing.
+- Do not fall back to paid models automatically. Explain that an existing paid
+  API project can incur charges; an editor-side request limit cannot guarantee
+  the provider account's total bill.
+- Keep credentials out of quest files, exports, reports and repository history.
+- The native translation-only writer must preserve gameplay data, validate the
+  supported packing/encryption format, and verify decoded output before export.
+- Description translation/summarization must pass line, width and encoding
+  checks. Treat font-based width estimates as provisional until calibrated in
+  game. Group the six variants by quest ID, but reuse a translation only for
+  matching text and context.
+
+Official distinction between subscriptions and API usage:
+https://ai.google.dev/gemini-api/docs/google-ai-plans
+
 ## Then: translation workflow
 
 - CSV/JSON export/import with quest ID, variant, source text and English text.

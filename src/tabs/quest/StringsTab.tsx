@@ -57,9 +57,9 @@ export function QuestStringTab() {
     };
     return (
     <div className="flex flex-row flex-wrap gap-2">
-        <GroupCard title="English text templates" contentClass="flex flex-col gap-2">
-            <p>Preview text from the current quest parameters. Unsupported objectives keep their existing text.</p>
-            <Button type="button" disabled={!isLoadedFile} onClick={() => generate('objectives')}>Preview objectives</Button>
+        <GroupCard title="Offline auto-fill" contentClass="flex flex-col gap-2">
+            <p>Generate English objectives and success/failure text from quest parameters. Works offline without an account or API key. Unsupported objectives keep their existing text.</p>
+            <Button type="button" disabled={!isLoadedFile} onClick={() => generate('objectives')}>Auto-fill Objective (preview)</Button>
             <label htmlFor="failure-template">Failure template (choose after checking the quest rules)</label>
             <select id="failure-template" className="text-black" value={failurePolicy} onChange={event => {
                 const value = event.target.value;
@@ -70,7 +70,7 @@ export function QuestStringTab() {
                 <option value="faints">Faint limit and time limit</option>
                 <option value="reward">Reward reaches 0z and time limit</option>
             </select>
-            <Button type="button" disabled={!isLoadedFile} onClick={() => generate('conditions')}>Preview success/failure</Button>
+            <Button type="button" disabled={!isLoadedFile} onClick={() => generate('conditions')}>Auto-fill Success/Failure (preview)</Button>
             {preview && <>
                 {preview.warnings.map(warning => <p key={warning} role="status">{warning}</p>)}
                 {(Object.keys(generatedLabels) as GeneratedField[]).filter(field => preview.values[field] !== undefined).map(field => (
@@ -83,7 +83,8 @@ export function QuestStringTab() {
                 <Button type="button" onClick={() => setPreview(undefined)}>Discard preview</Button>
             </>}
         </GroupCard>
-        <GroupCard title="Text" contentClass="grid grid-cols-4">
+        <GroupCard title="Quest Strings" contentClass="grid grid-cols-4">
+            <p className="col-span-4">All fields can be edited manually. Auto-fill is optional; review its preview before applying.</p>
             <TextAreaField
                 label="Title"
                 type="text"
