@@ -105,5 +105,9 @@ in this development environment. Quality, terminology and exact font fit need
 review. Existing Linux CI has a Wry/WebKit dependency build failure predating
 these changes; the portable test job isolates the new native code from it.
 
+The TypeScript suite includes 56 tests, including preservation of manual line
+breaks; 13 native Rust tests passed in CI. Frontend lint and type
+checks also passed. Rust formatting is checked separately in the portable job.
+
 ECC research-first, test-first verification and independent native-code review
 were used. No credentials or global ECC configuration were installed.

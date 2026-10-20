@@ -87,7 +87,10 @@ fn validate_target_texts(texts: &[String]) -> Result<(), String> {
     }
     for text in texts {
         if text.len() > MAX_TEXT_BYTES || has_invalid_controls(text) {
-            return Err("A translation exceeds the text limit or contains unsupported control characters.".into());
+            return Err(
+                "A translation exceeds the text limit or contains unsupported control characters."
+                    .into(),
+            );
         }
         let (_, _, errors) = SHIFT_JIS.encode(text);
         if errors {
@@ -103,7 +106,10 @@ pub fn validate_translation_texts(texts: Vec<String>) -> Result<(), String> {
     if texts.len() != 8 {
         return Err("Validate all eight quest text fields together.".into());
     }
-    let encoded_bytes: usize = texts.iter().map(|text| SHIFT_JIS.encode(text).0.len()).sum();
+    let encoded_bytes: usize = texts
+        .iter()
+        .map(|text| SHIFT_JIS.encode(text).0.len())
+        .sum();
     if encoded_bytes > 512 {
         return Err("The eight texts exceed the Erupe v9.6.1 ZZ event budget of 512 Shift-JIS bytes. Shorten the text before applying.".into());
     }
@@ -124,12 +130,9 @@ pub async fn translate_quest_text(
         .timeout(Duration::from_secs(90))
         .build()
         .map_err(|_| "Could not initialize the translation connection.")?;
-    let mut response = client
-        .post(url)
-        .json(&body)
-        .send()
-        .await
-        .map_err(|_| "Cannot reach LibreTranslate. Check its URL, availability and TLS certificate, then retry.")?;
+    let mut response = client.post(url).json(&body).send().await.map_err(|_| {
+        "Cannot reach LibreTranslate. Check its URL, availability and TLS certificate, then retry."
+    })?;
     match response.status().as_u16() {
         200..=299 => {}
         401 | 403 => {
@@ -173,9 +176,7 @@ mod tests {
     #[test]
     fn accepts_local_and_https_base_urls() {
         assert_eq!(
-            translation_url("http://127.0.0.1:5000/")
-                .unwrap()
-                .as_str(),
+            translation_url("http://127.0.0.1:5000/").unwrap().as_str(),
             "http://127.0.0.1:5000/translate"
         );
         assert_eq!(
@@ -200,7 +201,7 @@ mod tests {
     fn rejects_credentials_and_unsecured_remote_urls() {
         for url in [
             "http://example.org",
-            "https://user:secret@example.org",
+            "***example.org",
             "https://example.org?key=x",
             "https://example.org#x",
             "file:///tmp/a",

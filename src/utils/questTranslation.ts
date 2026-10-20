@@ -35,14 +35,16 @@ export function wrapTranslation(input: string, columns: number, maxLines: number
   if (!Number.isInteger(columns) || columns < 1 || columns > 200 || !Number.isInteger(maxLines) || maxLines < 1 || maxLines > 100) {
     throw new Error('Choose 1–200 columns and 1–100 lines.');
   }
-  const words = input.trim().split(/\s+/u).filter(Boolean);
   const lines: string[] = [];
-  let line = '';
-  for (const word of words) {
-    if (line && [...`${line} ${word}`].length > columns) { lines.push(line); line = word; }
-    else line = line ? `${line} ${word}` : word;
+  for (const hardLine of input.replace(/\r\n?/g, '\n').split('\n')) {
+    const words = hardLine.trim().split(/[\t ]+/u).filter(Boolean);
+    let line = '';
+    for (const word of words) {
+      if (line && [...`${line} ${word}`].length > columns) { lines.push(line); line = word; }
+      else line = line ? `${line} ${word}` : word;
+    }
+    if (line || input.length > 0) lines.push(line);
   }
-  if (line) lines.push(line);
   return { text: lines.join('\n'), fits: lines.length <= maxLines && lines.every(value => [...value].length <= columns), lines: lines.length };
 }
 

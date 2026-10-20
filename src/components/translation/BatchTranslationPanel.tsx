@@ -21,6 +21,7 @@ export function BatchTranslationPanel(props: Props) {
   const [rows, setRows] = useState<Row[]>([]);
   const [reports, setReports] = useState<BatchReport[]>([]);
   const [status, setStatus] = useState('');
+  const [translating, setTranslating] = useState(false);
   const [repack, setRepack] = useState(false);
   const [sourceSettings, setSourceSettings] = useState('');
   const cancelled = useRef(false);
@@ -39,7 +40,7 @@ export function BatchTranslationPanel(props: Props) {
   };
 
   const translate = async () => {
-    cancelled.current = false; props.setBusy(true); setReports([]);
+    cancelled.current = false; props.setBusy(true); setTranslating(true); setReports([]);
     const output: Row[] = [];
     const sources: Row[] = rows.map(row => ({ quest: row.quest }));
     try {
@@ -63,7 +64,7 @@ export function BatchTranslationPanel(props: Props) {
       setRows(output);
       setStatus(cancelled.current ? 'Cancelled after current request. Completed previews are preserved.' : 'Preview ready. Review all fields before exporting.');
     } catch (error) { toast.error(String(error)); }
-    finally { props.setBusy(false); }
+    finally { props.setBusy(false); setTranslating(false); }
   };
 
   const exportFiles = async () => {
@@ -98,7 +99,7 @@ export function BatchTranslationPanel(props: Props) {
     <Button type="button" disabled={props.busy} onClick={load}>Select quest BIN files</Button>
     {[...groups].map(([id, variants]) => <p key={id}>{id}: {variants.size}/6 variants; missing: {['d0', 'd1', 'd2', 'n0', 'n1', 'n2'].filter(value => !variants.has(value)).join(', ') || 'none'}</p>)}
     <Button type="button" disabled={props.busy || !rows.length || !props.selected.length} onClick={translate}>Translate selected files — preview</Button>
-    {props.busy && <Button type="button" onClick={() => { cancelled.current = true; }}>Cancel batch after current request</Button>}
+    {translating && <Button type="button" onClick={() => { cancelled.current = true; }}>Cancel batch after current request</Button>}
     <p role="status">{status}</p>
     {rows.map((row, index) => <details key={row.quest.path}>
       <summary>{row.quest.name} — {row.quest.wrappers.join(' → ') || 'raw'} {row.quest.error || row.error || (row.entries ? `${row.entries.length} translated fields` : 'not translated')}</summary>

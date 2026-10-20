@@ -15,6 +15,14 @@ test('overflow is reported without truncation', () => {
 test('long words require review', () => assert.equal(wrapTranslation('supercalifragilistic', 5, 4).fits, false));
 test('rejects invalid layout limits', () => assert.throws(() => wrapTranslation('x', 0, 3)));
 test('preserves empty text', () => assert.equal(wrapTranslation('', 28, 1).text, ''));
+test('preserves manually edited hard line breaks', () => {
+  assert.equal(wrapTranslation('Hello\nHunter', 28, 2).text, 'Hello\nHunter');
+});
+test('preserves blank lines and normalizes Windows newlines', () => {
+  const result = wrapTranslation('Hello\r\n\r\nHunter', 28, 3);
+  assert.equal(result.text, 'Hello\n\nHunter');
+  assert.equal(result.lines, 3);
+});
 test('selects Japanese fields and preserves existing English', () => {
   assert.deepEqual(translationEntries({ title: '狩猟', description: 'Already English' }, ['title', 'description'], true).map(x => x.field), ['title']);
 });
