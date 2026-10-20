@@ -1,0 +1,23 @@
+name: Quest string templates
+
+on:
+  push:
+    paths:
+      - 'src/utils/questStringTemplates.ts'
+      - 'tests/questStringTemplates.test.mjs'
+      - '.github/workflows/string-templates.yml'
+  pull_request:
+    paths:
+      - 'src/utils/questStringTemplates.ts'
+      - 'tests/questStringTemplates.test.mjs'
+      - '.github/workflows/string-templates.yml'
+
+jobs:
+  templates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --experimental-strip-types --experimental-test-coverage --test tests/questStringTemplates.test.mjs
