@@ -13,6 +13,10 @@ use tauri;
 async fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
+            translate_quest_text,
+            validate_translation_texts,
+            inspect_translation_quests,
+            export_translation_quests,
             read_quest_file,
             save_quest_file,
             export_quest_info,
@@ -37,3 +41,4 @@ async fn main() {
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
+
