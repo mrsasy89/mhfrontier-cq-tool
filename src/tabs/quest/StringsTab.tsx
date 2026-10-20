@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { QuestTranslationPanel } from "../../components/QuestTranslationPanel";
 import { toast } from "react-toastify";
 import { Button } from "../../components/Button";
 import { GroupCard } from "../../components/CardGroup";
@@ -83,6 +84,7 @@ export function QuestStringTab() {
                 <Button type="button" onClick={() => setPreview(undefined)}>Discard preview</Button>
             </>}
         </GroupCard>
+        <QuestTranslationPanel />
         <GroupCard title="Quest Strings" contentClass="grid grid-cols-4">
             <p className="col-span-4">All fields can be edited manually. Auto-fill is optional; review its preview before applying.</p>
             <TextAreaField
@@ -145,4 +147,5 @@ export function QuestStringTab() {
     </div>
   );
 }
+
 

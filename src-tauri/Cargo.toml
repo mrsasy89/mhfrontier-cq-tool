@@ -25,11 +25,14 @@ sqlx = { version = "0.6", features = [ "runtime-tokio-native-tls" , "postgres", 
 tokio = { version = "1", features = ["full"] }
 encoding_rs = "0.8.31"
 crc32fast = "1.4.0"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
 
 [features]
+portable-tests = []
 # by default Tauri runs in production mode
 # when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
 default = [ "custom-protocol" ]
 # this feature is used used for production builds where `devPath` points to the filesystem
 # DO NOT remove this
 custom-protocol = [ "tauri/custom-protocol" ]
+
