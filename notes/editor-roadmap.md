@@ -55,8 +55,9 @@ specific analyzed file. It is not a general repair recipe for arbitrary quests.
 
 ## Translation modes: required behavior
 
-These requirements apply to the forthcoming translation integration. The current
-draft implements offline templates only; it does not yet call a cloud provider.
+The draft now includes optional LibreTranslate single-quest and batch translation.
+See [setup and validation notes](libretranslate.md). Generative AI providers remain
+future options; Gemini is not required or integrated.
 
 - Manual editing of every Quest Strings field is always available.
 - Offline Objective and Success/Failure auto-fill remains a standard feature:
@@ -123,3 +124,4 @@ dependency.
 
 Paxlord's editor was inspected as a functional reference. No implementation was
 copied from it; its repository does not declare a license in the GitHub metadata.
+

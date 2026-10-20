@@ -288,6 +288,7 @@ pub fn unwrap(data: &[u8]) -> Result<(Vec<u8>, Vec<Layer>)> {
     let mut layers = Vec::new();
     for _ in 0..5 {
         if data.len() > MAX_FILE { return Err("Decoded file exceeds size limit".into()); }
+        if data.len() < 4 { return Ok((data, layers)); }
         match u32_at(&data, 0)? {
             ECD => {
                 let size = u32_at(&data, 8)? as usize;

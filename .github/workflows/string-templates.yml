@@ -42,4 +42,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo test --manifest-path native-tests/Cargo.toml
+      - run: cargo fmt --manifest-path native-tests/Cargo.toml
+      - name: Emit formatted source for development verification
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          paths=['src-tauri/src/app/translation.rs','src-tauri/src/app/translation_batch.rs','src-tauri/src/editor/translation_bin.rs','native-tests/lib.rs']
+          print('FORMATTED_SOURCES_JSON=' + json.dumps({p:pathlib.Path(p).read_text() for p in paths}))
+          PY
 
