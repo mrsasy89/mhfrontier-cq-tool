@@ -63,7 +63,7 @@ export function MonsterCard({ stages, onClose, index }: MonsterCardProps) {
         value={stageSelected || null}
       />
       <div className="flex flex-wrap">
-        <fieldset className="flex flex-row gap-2">
+        <fieldset className="flex flex-row flex-wrap gap-2 min-w-0">
           <legend className="dark:text-white">Position</legend>
           <div className="flex flex-col flex-wrap">
             <PosInputField

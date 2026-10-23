@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { useEffect, useRef, useState } from "react";
 
 import { findMapAndStage } from "../utils";
-import { getPolynomialX, getPolynomialY } from "../utils/math";
+import { hasCalibration, mapImagePath, pointerToCanvas, toCanvasPoint, toGamePoint } from "../utils/mapPreview";
 
 interface MaPreviewObject {
   x: number;
@@ -16,135 +16,92 @@ interface MapPreviewProps {
   objects: MaPreviewObject[];
   shouldCalculate?: boolean;
   canDraw?: boolean;
-  onChange?: (objects: MaPreviewObject) => void;
+  onChange?: (object: MaPreviewObject) => void;
 }
 
 const colors = ["rgb(250,82,222)", "red", "blue", "green", "yellow"];
 
-const drawError = (
-  ctx: CanvasRenderingContext2D,
-  message: string,
-  canvas: HTMLCanvasElement
-) => {
-  ctx.font = "1rem Arial";
-  ctx.fillStyle = "#FF0000";
-  ctx.textAlign = "center";
-  ctx.fillText(message, canvas.width / 2, canvas.height / 2);
-};
-
-export function MapPreview({
-  areaId,
-  mapId,
-  objects,
-  canDraw = true,
-  shouldCalculate = true,
-  onChange,
-}: MapPreviewProps) {
+export function MapPreview({ areaId, mapId, objects, canDraw = true, shouldCalculate = true, onChange }: MapPreviewProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [selected, setSelected] = useState<string | number>(objects[0]?.id);
-
+  const [selected, setSelected] = useState<string | number | undefined>(objects[0]?.id);
+  const [loaded, setLoaded] = useState<{ path: string; image?: HTMLImageElement }>();
   const { map, stage } = findMapAndStage(mapId, areaId);
-
-  const validMap = map && stage;
-  const hasCalc = stage?.calculationX && stage?.calculationY;
+  const path = map && stage ? mapImagePath(map.name, stage.areaNumber) : undefined;
+  const image = loaded?.path === path ? loaded?.image : undefined;
+  const failed = path !== undefined && loaded?.path === path && !image;
+  const calibrated = stage ? hasCalibration(stage) : false;
+  const active = objects.find(object => object.id === selected) ?? objects[0];
+  const editable = !!image && !!active && !!onChange && canDraw && (!shouldCalculate || calibrated);
 
   useEffect(() => {
-    if (!validMap) return;
-
-    const canvas = canvasRef.current!;
-    const ctx = canvas.getContext("2d")!;
-
-    const img = new Image();
-    const areaNumber = stage.areaNumber === 'Base' ? 0 : (stage.areaNumber.split(' ')[1])
-    img.src = `/maps/${map.name}/${areaNumber}.png`;
-
-    img.onerror = () => {
-      canvas.height = 150;
-      canvas.width = 150;
-      drawError(ctx, "Map image not found", canvas);
+    if (!path) return;
+    let cancelled = false;
+    const next = new Image();
+    next.onload = () => { if (!cancelled) setLoaded({ path, image: next }); };
+    next.onerror = () => { if (!cancelled) setLoaded({ path }); };
+    next.src = path;
+    return () => {
+      cancelled = true;
+      next.onload = null;
+      next.onerror = null;
     };
+  }, [path]);
 
-    img.onload = () => {
-      canvas.height = img.height;
-      canvas.width = img.width;
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx || !image || !stage) return;
+    canvas.width = image.naturalWidth;
+    canvas.height = image.naturalHeight;
+    ctx.drawImage(image, 0, 0);
+    objects.forEach((object, index) => {
+      const point = toCanvasPoint(object, stage, shouldCalculate);
+      if (!point) return;
+      ctx.fillStyle = colors[index % colors.length];
+      ctx.beginPath();
+      ctx.arc(point.x, point.y, 10, 0, 2 * Math.PI);
+      ctx.fill();
+    });
+  }, [image, stage, objects, shouldCalculate]);
 
-      ctx.drawImage(img, 0, 0);
-
-      const drawObject = (obj: MaPreviewObject, index: number) => {
-        const x =
-          hasCalc && shouldCalculate
-            ? getPolynomialX(obj.x, stage.calculationX!)
-            : obj.x;
-        const y =
-          hasCalc && shouldCalculate
-            ? getPolynomialX(obj.y, stage.calculationY!)
-            : obj.y;
-
-        ctx.fillStyle = colors[index];
-        ctx.beginPath();
-
-        ctx.arc(x, y, 10, 0, 2 * Math.PI);
-        ctx.fill();
-      };
-
-      for (const i in objects) {
-        drawObject(objects[i], Number(i));
-      }
-    };
-  }, [stage, map, objects, shouldCalculate, hasCalc, validMap]);
-
-  const getMousePos: React.MouseEventHandler<HTMLCanvasElement> = (evt) => {
-    if (!canDraw) return;
-
-    const rect = canvasRef.current!.getBoundingClientRect();
-    const pos = {
-      x: evt.clientX - rect.left,
-      y: evt.clientY - rect.top,
-    };
-    const obj = {
-      x:
-        shouldCalculate && hasCalc
-          ? getPolynomialY(pos.x, stage.calculationX!)
-          : pos.x,
-      y:
-        shouldCalculate && hasCalc
-          ? getPolynomialY(pos.y, stage.calculationY!)
-          : pos.y,
-      id: selected,
-    };
-
-    onChange?.(obj);
+  const move: React.MouseEventHandler<HTMLCanvasElement> = event => {
+    const canvas = canvasRef.current;
+    if (!editable || !canvas || !stage || !active) return;
+    const pixel = pointerToCanvas(event.clientX, event.clientY, canvas.getBoundingClientRect(), canvas.width, canvas.height);
+    const point = pixel && toGamePoint(pixel, stage, shouldCalculate);
+    if (point) onChange?.({ ...point, id: active.id });
   };
 
-  if (!validMap) return <></>;
+  if (!map || !stage) return null;
 
   return (
-    <div className="text-center w-min ">
+    <div className="text-center min-w-0 max-w-full" style={{ width: 180 }}>
       {objects.length > 1 && (
         <div className="flex flex-row flex-wrap gap-2 mb-1">
-          {objects.map((obj, i) => (
-            <div
-              key={i}
-              onClick={() => setSelected(obj.id)}
+          {objects.map((object, index) => (
+            <button
+              key={object.id}
+              type="button"
+              aria-label={`Select marker ${index + 1}`}
+              aria-pressed={active?.id === object.id}
+              onClick={() => setSelected(object.id)}
               className={classNames("w-4 h-4 rounded-full shadow-sm", {
-                "ring-2ring-slate-400 ring-offset-2 ring-offset-slate-50 border-2 border-emerald-500":
-                  selected === obj.id,
+                "ring-2 ring-slate-400 ring-offset-2 border-2 border-emerald-500": active?.id === object.id,
               })}
-              style={{ backgroundColor: colors[i] }}
+              style={{ backgroundColor: colors[index % colors.length] }}
             />
           ))}
         </div>
       )}
-      <div className="border flex justify-center items-center w-min">
-        <canvas
-          ref={canvasRef}
-          className="bg-black"
-          height={180}
-          width={180}
-          onClick={getMousePos}
-        />
-      </div>
-      {onChange && <small>click on the image to move</small>}
+      {image ? (
+        <canvas ref={canvasRef} className="bg-black ring-1 ring-gray-400" style={{ maxWidth: "100%", height: "auto", cursor: editable ? "crosshair" : "default" }} onClick={move} />
+      ) : (
+        <p role="status">{!path ? "No map image for this area." : failed ? "Map image not found." : "Loading map…"}</p>
+      )}
+      {image && shouldCalculate && !calibrated && (
+        <small>Preview only: this area has no calibrated game coordinates. Edit X/Y/Z directly.</small>
+      )}
+      {editable && <small>Click on the image to move.</small>}
     </div>
   );
 }
