@@ -1,0 +1,70 @@
+name: Windows preview build
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "src-tauri/**"
+      - "resources/**"
+      - ".github/workflows/windows-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      # The checked-in Tauri 1.2/time 0.3.17 lockfile predates Rust 1.80.
+      # Keep its compatible toolchain rather than silently updating dependencies.
+      - name: Install compatible Rust toolchain
+        run: |
+          rustup toolchain install 1.77.2 --profile minimal
+          rustup default 1.77.2
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "src-tauri -> target"
+      - name: Install frontend dependencies
+        run: npm install --ignore-scripts --package-lock=false
+      - name: Check and build frontend
+        run: |
+          node tests/mapPreview.test.mjs
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run lint
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run check-types
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run build
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Compile Windows executable
+        working-directory: src-tauri
+        run: cargo build --release --locked
+      - name: Prepare portable package
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path out -Force | Out-Null
+          Copy-Item -LiteralPath "src-tauri/target/release/app.exe" -Destination "out/MHFrontier-CQ-Editor-map-preview.exe"
+          @"
+          MHFrontier CQ Editor 1.5.2 - map preview test build
+          Source commit: ${{ github.sha }}
+          Includes Snowy Mountain image path correction.
+          Requires Microsoft Edge WebView2 Runtime.
+          This build contains the map fix; translation work remains in its separate PR.
+          Snowy Mountain is preview-only until game coordinates are calibrated.
+          "@ | Set-Content -LiteralPath out/README.txt -Encoding utf8
+          Get-FileHash -LiteralPath "out/MHFrontier-CQ-Editor-map-preview.exe" -Algorithm SHA256 |
+            ForEach-Object { "$($_.Hash)  MHFrontier-CQ-Editor-map-preview.exe" } |
+            Set-Content -LiteralPath out/SHA256SUMS.txt -Encoding ascii
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MHFrontier-CQ-Editor-Windows-x64-map-preview
+          path: out/
+          if-no-files-found: error
+          retention-days: 30
