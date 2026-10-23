@@ -1,0 +1,36 @@
+name: Map preview
+
+on:
+  pull_request:
+    paths:
+      - "src/components/MapPreview.tsx"
+      - "src/components/MonsterCard.tsx"
+      - "src/utils/mapPreview.ts"
+      - "src/utils/maps.ts"
+      - "resources/maps/**"
+      - "tests/mapPreview.test.mjs"
+      - ".github/workflows/map-preview.yml"
+  workflow_dispatch:
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Check image paths and coordinate conversions
+        run: node tests/mapPreview.test.mjs
+      - name: Install frontend dependencies
+        run: npm install --ignore-scripts --package-lock=false
+      - name: Lint and type-check
+        run: |
+          npm run lint
+          npm run check-types
+      - name: Build bundled frontend
+        run: npm run build
+      - name: Verify Snowy Mountain images are bundled
+        run: |
+          test -f "dist/maps/Snowy Mountain Day/2.png"
+          test -f "dist/maps/Snowy Mountain Night/2.png"
