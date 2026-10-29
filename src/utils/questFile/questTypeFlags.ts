@@ -25,9 +25,6 @@ export interface MainQuestProp {
   quest_fee: number;
   reward_main: number;
   max_death: number;
-  unk9: number;
-  unk10: number;
-  unk11: number;
   reward_a: number;
   skip2: number[];
   reward_b: number;

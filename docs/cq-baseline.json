@@ -1,0 +1,755 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/mrsasy89/mhfrontier-cq-tool",
+  "revision": "1176c07ede6770117684f2643efd3315a940872b",
+  "comparison": "UTF-8 source bytes with CRLF normalized to LF; no other normalization",
+  "files": [
+    {
+      "path": "src-tauri/better_cursor/.gitignore",
+      "baseline_sha256": "44c92e3a70ad3307b7056871c2bdb096d8bfa9373f5bf06a79bb6324a20ff2fb"
+    },
+    {
+      "path": "src-tauri/better_cursor/Cargo.lock",
+      "baseline_sha256": "fa373732ab90fe3eea2a81d2f17770996bd1bb835480558b3db8fb06ae96e8aa"
+    },
+    {
+      "path": "src-tauri/better_cursor/Cargo.toml",
+      "baseline_sha256": "52180f7e71ec7b790eae7c4bed7fe8a9eb74d61d481fa31db23f79a9db83b4c4"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/.gitignore",
+      "baseline_sha256": "44c92e3a70ad3307b7056871c2bdb096d8bfa9373f5bf06a79bb6324a20ff2fb"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/Cargo.toml",
+      "baseline_sha256": "bb30b1eb52454028bcf7c945c08e59b3d5a2ed07de5360933da9dcfee32cbc9e"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/better_cursor.rs",
+      "baseline_sha256": "f0dd6ddd1f4567c1133b09a3738a1fa417cc7bd0116706cab188ce95cca56394"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/cursor/mod.rs",
+      "baseline_sha256": "5af2f39cbafe9fe207581040bed171489159b41200e5187efedaa6794bcf4d1b"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/cursor/read.rs",
+      "baseline_sha256": "35a28a81714dd93f039993827235eb694c0a51998a9dd874325b2e14770d62a3"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/cursor/seek.rs",
+      "baseline_sha256": "e8cd219046e516fab6b1d2aa421a10a3914407ec3161e4407f6af63e75e6c2ef"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/cursor/write.rs",
+      "baseline_sha256": "3f03e3b7a59bf359783b5aaea5294a873f9f7218b251d4bd95897e8d82881fed"
+    },
+    {
+      "path": "src-tauri/better_cursor/core/lib.rs",
+      "baseline_sha256": "95ea4f2c9d07cbdba11674c8954934a0fb60d99cc438117430be8bee3db5da5c"
+    },
+    {
+      "path": "src-tauri/better_cursor/derive/.gitignore",
+      "baseline_sha256": "937456f730114c410243b25f3587e29a6c608b3a79356adafeefb6b960e004b2"
+    },
+    {
+      "path": "src-tauri/better_cursor/derive/Cargo.toml",
+      "baseline_sha256": "77a0a5fe77df74821e784fdcdcce51d8dab3bcee1e67a49eaa865663d4c68db1"
+    },
+    {
+      "path": "src-tauri/better_cursor/derive/lib.rs",
+      "baseline_sha256": "f8790c8ae119479d1f61fc2368f29c7c6c64078796c4ffe036d270ca5d3aff17"
+    },
+    {
+      "path": "src-tauri/better_cursor/derive/read.rs",
+      "baseline_sha256": "02614a43654ecfd165d21e6e94f2ae0d7b6a0cf16bf577b4ec2c26d098f48151"
+    },
+    {
+      "path": "src-tauri/better_cursor/derive/write.rs",
+      "baseline_sha256": "b519c2b09065665b71382387d669f488f94f74255b48481fcc77d2cb89b138c4"
+    },
+    {
+      "path": "src-tauri/better_cursor/src/lib.rs",
+      "baseline_sha256": "6640a7d42e485b097e0aec2dbc0ea5d9e04073b03a544118efd5e501b6593c65"
+    },
+    {
+      "path": "src-tauri/better_cursor/src/tests.rs",
+      "baseline_sha256": "6b42a434de77e267074c678ec9fdf2eeba03e151148fc9ca18c25f2559bb6154"
+    },
+    {
+      "path": "src-tauri/src/app/db/commands.rs",
+      "baseline_sha256": "8a47e6733f7b6374df400a2a9940edbd3910c5347817c3555ce3bc1fe42ae9cc"
+    },
+    {
+      "path": "src-tauri/src/app/db/config.rs",
+      "baseline_sha256": "836cc4a346128b52b6a7dacc75c149e2a6541952b5617cf11d8a752906c85575"
+    },
+    {
+      "path": "src-tauri/src/app/db/db.rs",
+      "baseline_sha256": "91e19de2cff08ecd57ddba74525b58a0833d717d4e72887242412f36bd369755"
+    },
+    {
+      "path": "src-tauri/src/app/db/mod.rs",
+      "baseline_sha256": "58d22295459d5fded3be53c60c7630df767d691d381867bd2b8d053468965551"
+    },
+    {
+      "path": "src-tauri/src/app/db/questlist/mod.rs",
+      "baseline_sha256": "b7439c238668dafd2924d83bd396532749d6966f8670a1a0d714f0af1f9d636e"
+    },
+    {
+      "path": "src-tauri/src/app/db/questlist/types.rs",
+      "baseline_sha256": "e8a592215c0976d75a40ba9471afb5c566f312dfacd0d0a195fdae266aaa2d2e"
+    },
+    {
+      "path": "src-tauri/src/app/db/quests/mod.rs",
+      "baseline_sha256": "331abc9d6413fec25018acf1a3e8db4a266a7cbbe63cde8863846653badf08d7"
+    },
+    {
+      "path": "src-tauri/src/app/db/quests/types.rs",
+      "baseline_sha256": "b2ba0ece38b30eda27da118a03cb4bd2744b989a8242f3567d481eba0ada005d"
+    },
+    {
+      "path": "src-tauri/src/app/db/types.rs",
+      "baseline_sha256": "c63f1b1327d80e597e4a5be31770579513ac6a20b00c138a0bc118865b3ee4c6"
+    },
+    {
+      "path": "src-tauri/src/app/mod.rs",
+      "baseline_sha256": "d0a6821ac1f962404cecebf8fc69a26793aa3f26c17aa26cd8e1f286675307f5"
+    },
+    {
+      "path": "src-tauri/src/app/quest.rs",
+      "baseline_sha256": "9036fb4b4f8997ead86581ff6efd28eae43cd249993d844518cc0146c49e66d1",
+      "exception": "Workspace-only backed-up saves; original parser/serializer stays in the native editor.",
+      "expected_sha256": "096d816c67f8f4d08b5efdb40cced327e277ae21ae75c727e20bdc5c9ecb4c24"
+    },
+    {
+      "path": "src-tauri/src/app/questlist.rs",
+      "baseline_sha256": "68c6130ff7ac6be5800917a04febc1c2e5c5ca5c2e6cfd5caa38d6d71584c294"
+    },
+    {
+      "path": "src-tauri/src/app/re_frontier.rs",
+      "baseline_sha256": "1eb2c5a48cada6da1b2e3523c27f9bfee4b39350984620b8cdf87d42c480a5fb",
+      "exception": "Disable the direct live-file external tool route; use isolated engine copies.",
+      "expected_sha256": "498cee07ad2a520c3b9c822568e177434428f7a25b0e59eb3be287ac66564b91"
+    },
+    {
+      "path": "src-tauri/src/app/utils.rs",
+      "baseline_sha256": "1b11ef6ee2b51ab095fc33aa17392f7936b4d39ff8510160a9658038309efe26"
+    },
+    {
+      "path": "src-tauri/src/editor/mod.rs",
+      "baseline_sha256": "0c8833c54e97bbac9e525b0b6f3f1ea8790da2a39012578515d203c62d005e1a"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/header.rs",
+      "baseline_sha256": "2619903bc9e9c686f57c6ce1f4efb44f17c944f7e528df445fb248a1a8ba1329"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/loaded_stages.rs",
+      "baseline_sha256": "efbfa7955226037a749eb67261ba4fca1827c9e079deba37d1f5b9499f339d40"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/map_zones/map_section.rs",
+      "baseline_sha256": "06fbd4f7874e911f6e15980f3001a91a56f2937f84fc81dca6f13415b6a87b57"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/map_zones/map_zones.rs",
+      "baseline_sha256": "b11309d6ca12463fbd36fefac06e6d604fbae19681789e941d25a81a921adeda"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/map_zones/mod.rs",
+      "baseline_sha256": "510692b8ad4f7162d917f691cea5934c0edcffe889348c1ea0175540b8d408eb"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/mod.rs",
+      "baseline_sha256": "1498da55e7855eccad695486d29de9a0ac21ac68b3647765017041c259ede87d"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/monsters.rs",
+      "baseline_sha256": "e30b6dc698e827f587dceb5e274274a38fa6364fa35d372974cbd5a8620edb24"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/offsets.rs",
+      "baseline_sha256": "6a708c66489a7e6af52e6fc3b4f1659cabdc5a8584d15db17267a87574db491e"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/quest_end_flag.rs",
+      "baseline_sha256": "f0f5e965177fd4a36cc9f41bde4990076161f51b1c4993d6985f481e2c4d96e1"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/quest_file.rs",
+      "baseline_sha256": "758cd1ca57a7a9e60a82970caa0d1d5ca0606d465ad9930a3e4f2420594ff32a"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/quest_string.rs",
+      "baseline_sha256": "7bc84d7b3e90623d3e6b9312619c7c3acebb1e3656670bcff141b2812ab11723"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/quest_type_flags.rs",
+      "baseline_sha256": "ad32c646465cf4fc6ceea23ca0faebde5b0b07e346729558dca4f4dde60a371e",
+      "exception": "Correct the independently verified full u32 failure field and add its regression test.",
+      "expected_sha256": "dd74edcff58f982d4e62488bc76d23c6148b7a4fa5a88f8dadb4153162394096"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/reward.rs",
+      "baseline_sha256": "e825331ec048985ffcc52640e9c87ff3615bcb719d8bf385aa760ffaae5b9e7b"
+    },
+    {
+      "path": "src-tauri/src/editor/quest/supply_items.rs",
+      "baseline_sha256": "e7f47d31355fb652b991149d1d6ff68bc15ebf420db37300caa8b228f3ab29bb"
+    },
+    {
+      "path": "src-tauri/src/editor/questlist/mod.rs",
+      "baseline_sha256": "2ee061b904b40f90656b424f3430251e39ae51207583b90a3defd643d2558935"
+    },
+    {
+      "path": "src-tauri/src/editor/questlist/quest_info.rs",
+      "baseline_sha256": "42a3808f14f3a4acd04c81ea97b5afe264c52083a743f36aed9c74ea3be891eb"
+    },
+    {
+      "path": "src-tauri/src/editor/questlist/quest_info_header.rs",
+      "baseline_sha256": "18cf26b0cc4c2900f6655026371ace2a2b32c1ff0d120d2f48019d848e7d987e"
+    },
+    {
+      "path": "src-tauri/src/editor/questlist/questlist_file.rs",
+      "baseline_sha256": "37a0a058326fe0b41c4f76f6d65e2421a137b4412c1ad2185c93f55d97048eec"
+    },
+    {
+      "path": "src-tauri/src/editor/questlist/questlist_header.rs",
+      "baseline_sha256": "23e6764813cceb637bb59a6f53855cd55283a4d96883392772b91564d2c66615"
+    },
+    {
+      "path": "src-tauri/src/editor/save_json.rs",
+      "baseline_sha256": "62049e2b403e24e3354363fd685060556b23e8ad5a0a850d5076390274d500ed"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/mod.rs",
+      "baseline_sha256": "67d2b54309f37cf6278f4ddb57e1d1d106debdc55edb7b740b00aff535d8509c",
+      "exception": "Register the opt-in independent Python export read-back test.",
+      "expected_sha256": "9655b03ab30eec6420d3bb980bb12b7bc5a1014d34b76e01ed90963bf5fd4ccf"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_gen_quest_prop.rs",
+      "baseline_sha256": "2ab3f04ceefdc5d16f59bb1ede9197bacffe2dcfbc6887e5227e40e8386e3932"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_header.rs",
+      "baseline_sha256": "60b1a12f710b2e2f3d9319f74cc99bdc142b5966c42164029dfeed4bb3896689"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_info.rs",
+      "baseline_sha256": "8b0d1779ce76a9c334438c787a99ef02615a5d2c1463403ae8380b62d0e38db6",
+      "exception": "Adapt fixtures to the u32 failure-field representation without changing serialized size.",
+      "expected_sha256": "7ff4394bfca48e8130a37300967035cd2961407c5dfa38bf39632e7826de4fdf"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_io.rs",
+      "baseline_sha256": "8238f24c7dc505778450c7a10c1125690e0a573d475a83c35e5cb8352251003f"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_large_monster.rs",
+      "baseline_sha256": "b73919ddba5accf75e1c805b1fe02bbf9c5b3ea6329790c159fabdc75cee0172"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_loaded_stages.rs",
+      "baseline_sha256": "386b3739560f01dcd4606f06d610a3685e3d0dfcc7c1dd62216855b6df15fe0d"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_map.rs",
+      "baseline_sha256": "60467ba3561be1f32f874c9eecfa693be6a898982b351cb96fbe2446612adbd4"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_rewards.rs",
+      "baseline_sha256": "25407ad84ac71e41188bbb7d62db27eebd35baf82ee9a64a5f72db3641638dad"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_strings.rs",
+      "baseline_sha256": "4d6b470c4b3c754911532b1dbbb1739313742b18d748a8430012641f97938823"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/quest_type_flags.rs",
+      "baseline_sha256": "dbb8c06d294055a2487f16601cf9f6af2ca50876f30e7e8f5a27a9dada7a319d",
+      "exception": "Adapt fixtures to the u32 failure-field representation without changing serialized size.",
+      "expected_sha256": "b6cbf8c895daf080829fe8e5d1658ad97a82cf8903541cdc0068bf6ff6023cd7"
+    },
+    {
+      "path": "src-tauri/src/editor/tests/utils.rs",
+      "baseline_sha256": "2e8a854e666d2d060719212fc8d737548d50fc1ae1a6273e00fcbe386f5e8e26"
+    },
+    {
+      "path": "src-tauri/src/main.rs",
+      "baseline_sha256": "5e24af00f0fb7c3c25339309efc8bf68a4d0bcd542897973fa663d83a21b81a2",
+      "exception": "Register the AI bridge and workspace guards; disable direct database mutations.",
+      "expected_sha256": "3e1717194bf8baf0b7820cd9c7f46c32c83b60ebe558f76836ec7cdbbd7b4f76"
+    },
+    {
+      "path": "src/App.tsx",
+      "baseline_sha256": "77315ddd80c18da5f0aa47cac54a19176f51708ed56726a1a268ad6768a98f4f"
+    },
+    {
+      "path": "src/components/AllowedWeaponType.tsx",
+      "baseline_sha256": "f932d73f2b29e3ae1fc7abc96f6845568eca90a10ad804d22b7a02c8aa70372b"
+    },
+    {
+      "path": "src/components/BitFlags.tsx",
+      "baseline_sha256": "053d0c6a0958abc054dd47e23b90ebcdef34d263f715607082d08140d7a48cb4"
+    },
+    {
+      "path": "src/components/Button.tsx",
+      "baseline_sha256": "3e7b999b4e842e24a2a8e6d10813fe8d8d4dd02b2beb6f04e95d184d3db66784"
+    },
+    {
+      "path": "src/components/CardGroup.tsx",
+      "baseline_sha256": "82e8ab45de39596dbf9923b31e669ac991deaa1362f07c49b2b7bacec3d128fb"
+    },
+    {
+      "path": "src/components/Checkbox.tsx",
+      "baseline_sha256": "7abd946d4d44f2238021b5e726093e2b5ca8e1e33908f2846bbd0f2fe4a9f864"
+    },
+    {
+      "path": "src/components/Dropzone.tsx",
+      "baseline_sha256": "eef9670efdf8f97199595bb16e4bcac188a439dc131f168815dc31bae1f327e9"
+    },
+    {
+      "path": "src/components/Input.tsx",
+      "baseline_sha256": "47ec88c88b7518f24def6c7807b8b9a746fbb7e17f55ecf59a824459ccbc215b"
+    },
+    {
+      "path": "src/components/MapPreview.tsx",
+      "baseline_sha256": "330330aef6cb632c4ceca27880ba309994ad33046700f4d3b149d8fe2e87e297"
+    },
+    {
+      "path": "src/components/MonsterCard.tsx",
+      "baseline_sha256": "3739bf4f8b03f1957f0445d644698ec5aa9bfdbbf1fc42d95d2387dc52c4ac33"
+    },
+    {
+      "path": "src/components/Objective.tsx",
+      "baseline_sha256": "c6cca65ff5220bf06b001197dd3611131b9243a11a4b1c52d9f33059dfa5da81"
+    },
+    {
+      "path": "src/components/Pagination.tsx",
+      "baseline_sha256": "1d460b94163203545e4fc4b80ebea9130dcbe7903a392cd8b96a72dbde07d129"
+    },
+    {
+      "path": "src/components/PlayerSpawn.tsx",
+      "baseline_sha256": "e3dbe49cd0e0c1019c32ac4fe40a2513ca3c764f3295044ab1a63b96c02bc7ca"
+    },
+    {
+      "path": "src/components/PosInput.tsx",
+      "baseline_sha256": "21cd8e82802be45a99fd0b769aaee41d76d61e72388cbd9b886cd4489057308a"
+    },
+    {
+      "path": "src/components/Select.tsx",
+      "baseline_sha256": "47b1b43f072676ecc20935012e753eb703c1e1bee6145641e959b59864785686"
+    },
+    {
+      "path": "src/components/TextArea.tsx",
+      "baseline_sha256": "66b4c196400ed9eec8a3f78e8a59b37cd18b9f7a5a90738972e51b60da763ded"
+    },
+    {
+      "path": "src/components/UnknownFields.tsx",
+      "baseline_sha256": "8e470603bedb0f29fd282ebbeb5a210674f374e759f808a1b17edb2ad736d5fa"
+    },
+    {
+      "path": "src/constants.ts",
+      "baseline_sha256": "6fc87da4235c2420b91bca0848358f7610f3971b68ea1ab0b89b74cff19a4a05"
+    },
+    {
+      "path": "src/context/ConfigContext.tsx",
+      "baseline_sha256": "85fc15006d1b4c57fa12198cfe148c602887ed34ca01c244452a8b1897f65846"
+    },
+    {
+      "path": "src/context/QuestEditorContext.tsx",
+      "baseline_sha256": "0c4ab394c95f821843de084fe434e9b628a9d3d2d24e19d80f8623a0ee49df04",
+      "exception": "Ask for a workspace save destination and preserve original input bytes.",
+      "expected_sha256": "49e501e92339f62a531214d3d0b751e18de371a2591a8bc5e45807367c2142c4"
+    },
+    {
+      "path": "src/context/QuestlistEditorContext.tsx",
+      "baseline_sha256": "a4c701ea4e328103cba8dac3aefb2f93322f8dcff4c4d5d395981ac195dd5d44"
+    },
+    {
+      "path": "src/context/RemoteQuestContext.tsx",
+      "baseline_sha256": "42ba5252eaca5885006ae1fc6ef7147b094a153ae86f832c5b3ede06cb1b91dc"
+    },
+    {
+      "path": "src/context/RemoteQuestlistContext.tsx",
+      "baseline_sha256": "217ebdf5d7ce35b34a5d6cd67c28f159021b5714db16f6153dedb9c461ed0c67"
+    },
+    {
+      "path": "src/context/ToolContext.tsx",
+      "baseline_sha256": "fd66d782bd6e6a06e699ba12b253f15a8e71e1e85cae7045697477c90741368b",
+      "exception": "Add and select the AI authoring tool without rewriting native quest tabs.",
+      "expected_sha256": "482ca3142159d8c93322e965de586a754b972d49a4f9d515ef595f0ea8354822"
+    },
+    {
+      "path": "src/events/core.ts",
+      "baseline_sha256": "3a17ecd6d68268f027664592ae733297f8b49eeb70b5e9bf233e33ff90217c27"
+    },
+    {
+      "path": "src/events/db.ts",
+      "baseline_sha256": "b904acdee8ce09c00e2216c5e5e27758f79fe295f66765364ec6e4eaccf3ef09"
+    },
+    {
+      "path": "src/events/index.ts",
+      "baseline_sha256": "60679d42051a488ced6625a806c0e93df2a5d0b0694350eaada6c5652776d630"
+    },
+    {
+      "path": "src/events/quest.ts",
+      "baseline_sha256": "35b2c5a9a72c20621b948ad429f6800115d43148d8613932cf5d09c2a0d1796e",
+      "exception": "Pass original and target paths to the guarded native save.",
+      "expected_sha256": "9863eaa9a759203bae39be9c5bf133bc4c3e1d9c79890ba368f16f303c84a1d9"
+    },
+    {
+      "path": "src/events/questlist.ts",
+      "baseline_sha256": "7ba996db35fb77120d009537a923cd8fb2765b6f0b450e8cb76c91ee430078ee"
+    },
+    {
+      "path": "src/events/refrontier.ts",
+      "baseline_sha256": "04d41b6d63ba65dba9a4e83c733239f61812581f793450aa6597a4dcec81135c"
+    },
+    {
+      "path": "src/index.css",
+      "baseline_sha256": "e29a51c118da4485f97bdd0bc1f9ead710294d0db6240527d7e8d8090e53a658"
+    },
+    {
+      "path": "src/index.tsx",
+      "baseline_sha256": "8fc86b4b590804ad79c49c223e0f16bb519e0639709aa6a630ad11660bfa3823"
+    },
+    {
+      "path": "src/tabs/develop/MapPosition.tsx",
+      "baseline_sha256": "a656abce1a594e222d82f6891767ed47f029bb8f74d057c51aaf2d3e4adf78d0"
+    },
+    {
+      "path": "src/tabs/quest/ExportToQuestlistTab.tsx",
+      "baseline_sha256": "476566200b4978b8bc349960e7805fb90dc3e37373504f87bd9716ef67925878"
+    },
+    {
+      "path": "src/tabs/quest/FlagsTab.tsx",
+      "baseline_sha256": "6da72f67f6c4f871470116c007f2e635733dc83462bade3730cc44f6aea49341"
+    },
+    {
+      "path": "src/tabs/quest/ForcedEquipementTab.tsx",
+      "baseline_sha256": "0d85eaae193c3c66b109ecb2cc7c5efc8a2c51ca8277ec90fd170975bb89f3ca"
+    },
+    {
+      "path": "src/tabs/quest/LoadQuestTab.tsx",
+      "baseline_sha256": "ca224fa9925f45c21c296b58aed0e1bd9b30a3813aea7675ada9c1e3b97154b6"
+    },
+    {
+      "path": "src/tabs/quest/MonstersTab.tsx",
+      "baseline_sha256": "68d6865efd0fb7556daa79c791599d58f46074641d675b0e5ac2dcd0c0d27b84"
+    },
+    {
+      "path": "src/tabs/quest/QuestInfoTab.tsx",
+      "baseline_sha256": "6cf440da162bb9578041d99f2dead8e85bba75644b59d361a4e91374e8344154",
+      "exception": "Label the corrected full u32 failure field accurately.",
+      "expected_sha256": "ca847aa6b989b36c83c9c5d2083b1621698b5bb5d15793e5c6cf97fadd4b3b5b"
+    },
+    {
+      "path": "src/tabs/quest/RewardsTab.tsx",
+      "baseline_sha256": "d41b80d2aea29f243df93bb2f05dc598f9e9618a6715e7053cedd49bcfcba56f"
+    },
+    {
+      "path": "src/tabs/quest/SmallMonsterTab/MapSection.tsx",
+      "baseline_sha256": "6160ba72c435fb2a06ef692afa01f812ac19cff07cebab95e814cc63bd955c3e"
+    },
+    {
+      "path": "src/tabs/quest/SmallMonsterTab/SmallMonsterEdit.tsx",
+      "baseline_sha256": "e3e0297bb8362e9233ae29bc628397c311384f8fff901dfca46d2ca8ac371d10"
+    },
+    {
+      "path": "src/tabs/quest/SmallMonsterTab/index.tsx",
+      "baseline_sha256": "59e0d6e33092be101290c79fc26d60b457e3dae45bed37aab1f93d2abfb5e82c"
+    },
+    {
+      "path": "src/tabs/quest/StringsTab.tsx",
+      "baseline_sha256": "168025ea3b270e3137369065f45c92be89b09d5284227cf13c2a544267f47989"
+    },
+    {
+      "path": "src/tabs/quest/SupplyItemTab.tsx",
+      "baseline_sha256": "7935ba0eb3f99c3512f42324ad0543de05f43cf004dc424232591585780878f8"
+    },
+    {
+      "path": "src/tabs/quest/UnknownTab.tsx",
+      "baseline_sha256": "1bbf52328b639116151fc06330216c5ce555caf4711f0d6619ebd934f1dca3be"
+    },
+    {
+      "path": "src/tabs/questlist/LoadQuestlistTab.tsx",
+      "baseline_sha256": "c28c753d13723f5a2c99d109224c8152cbf1bca2789ebbd98cbfa6626289496e"
+    },
+    {
+      "path": "src/tabs/questlist/QuestlistTab/QuestInfoEdit.tsx",
+      "baseline_sha256": "3d8d030f26f4d89a853d466e2e77bb55077fedf0aabf5ce798338c574c7cf463",
+      "exception": "Label the corrected full u32 failure field accurately.",
+      "expected_sha256": "3b0976cd6993ea3584dbfb948b2b455e366e756187b2c90094f9685153d7b025"
+    },
+    {
+      "path": "src/tabs/questlist/QuestlistTab/QuestlistRow.tsx",
+      "baseline_sha256": "215317bad9589baf645e6f19f2eff974ec72184bdb00f08fba2f84727edeaee8"
+    },
+    {
+      "path": "src/tabs/questlist/QuestlistTab/QuestlistTab.tsx",
+      "baseline_sha256": "2c9e91b32b1c084b565d4e2ee5eda1b5faa4e6b711748a22f0e5c4e4503e1f57"
+    },
+    {
+      "path": "src/tabs/questlist/QuestlistTab/QuestlistTable.tsx",
+      "baseline_sha256": "a7e6768959999b0ee3ed2c321a01a905a8505558b39028fb2e5074c62e59a672"
+    },
+    {
+      "path": "src/tabs/questlist/QuestlistTab/index.ts",
+      "baseline_sha256": "6900917e5483061796f931d27a551425f333dea9cf0a2048501cba8dc3824aa9"
+    },
+    {
+      "path": "src/tabs/remote/quest/AddQuestToList.tsx",
+      "baseline_sha256": "8d442d3ad7076088b52f0269ef60b7bfd804e84dbe39bd358d52029dd0c4f3c8"
+    },
+    {
+      "path": "src/tabs/remote/quest/RemoteQuestRow.tsx",
+      "baseline_sha256": "e11c6fd52adb4d7f7baf41654d3ab08ebc66e60cfc59e5093f95acd13e556195"
+    },
+    {
+      "path": "src/tabs/remote/quest/RemoteQuestTab.tsx",
+      "baseline_sha256": "477fb50b7bf40aa5082c1a5d3b856c05dcce9e499e0944bdce47286dcdb574c6"
+    },
+    {
+      "path": "src/tabs/remote/quest/RemoteQuestTable.tsx",
+      "baseline_sha256": "b1967b767ed097f2aeb4ee97f4ca510c47b3aeb22a4a99cf614c6d38b94ea70b"
+    },
+    {
+      "path": "src/tabs/remote/questlist/RemoteQuestlistEdit.tsx",
+      "baseline_sha256": "c576e1f09c3c3b941b46931b411546b38ecc4b903135b84da65a14f4ae530cd9"
+    },
+    {
+      "path": "src/tabs/remote/questlist/RemoteQuestlistRow.tsx",
+      "baseline_sha256": "04f8b2bd133e0de2febcd91748e83d2b6be160eae19d3e9270bc90265263edd0"
+    },
+    {
+      "path": "src/tabs/remote/questlist/RemoteQuestlistTab.tsx",
+      "baseline_sha256": "bd058530723fd1289d301db8df4e310d4a19b6ccc0cf5d027ea6a0842818a63c"
+    },
+    {
+      "path": "src/tabs/remote/questlist/RemoteQuestlistTable.tsx",
+      "baseline_sha256": "83147adb3183c05f82069885ba861ca52f34ed7cf4cfbb197dcb674751cb28fc"
+    },
+    {
+      "path": "src/tabs/template/TemplateTab.tsx",
+      "baseline_sha256": "eb17786af543c48c0421d74ec31f3b8bbe7b25056146542968a14d9d2636f663"
+    },
+    {
+      "path": "src/tools/ConfigEditor.tsx",
+      "baseline_sha256": "9608fd5d9483b2412dd0d491c225825d58b5d20f5ac99db54f9696e2ecb09127"
+    },
+    {
+      "path": "src/ui/Layout/Layout.tsx",
+      "baseline_sha256": "fba1f8571c4c0dcfd5d1c9b61719b240fcbc2cede77c004921fb28a798963495"
+    },
+    {
+      "path": "src/ui/Layout/LayoutBody.tsx",
+      "baseline_sha256": "9f5a2d6ce6f5017e549eb91e75d91e9fea7ce5c92b04af1a38f922ef85ea0657"
+    },
+    {
+      "path": "src/ui/Layout/LayoutContext.tsx",
+      "baseline_sha256": "f32338b304efa1e3d975710dc9f9237fa27e943c5cb9504133bb958d7e45081f",
+      "exception": "Avoid nesting the AI form inside the native editor save form.",
+      "expected_sha256": "d815a38e3abb42a25bdd59122c8fc9941fc1882b280dac8f74b9be8353334cee"
+    },
+    {
+      "path": "src/ui/Layout/LayoutNavbar.tsx",
+      "baseline_sha256": "f865042fd048f637361d978d4dbf424fc2ec05a010eb971b6e1eff127c44dfa2",
+      "exception": "Identify this AI integration build.",
+      "expected_sha256": "2d627086af45a80c5048defd8f88024f5ecf8bb906a3e58e4b252e22defa3b25"
+    },
+    {
+      "path": "src/ui/Layout/LayoutNavbarGroup.tsx",
+      "baseline_sha256": "fb11afebac6cf6c2c46bbf92aece83e78ae9d3deb0b1bbed1f67b085aa39bb5f"
+    },
+    {
+      "path": "src/ui/Layout/LayoutNavbarItem.tsx",
+      "baseline_sha256": "0c79a95489c8e50e8377713781e6c994370a62294fafe3084b9837639b316d4b"
+    },
+    {
+      "path": "src/ui/Layout/LayoutNavbarItemButton.tsx",
+      "baseline_sha256": "1c71cea16740031e1eb246441d2288a7935a74b4f829990168caff7325c991ca"
+    },
+    {
+      "path": "src/ui/Menu/MenuContext.tsx",
+      "baseline_sha256": "ba2666238efde59a7b6fc708dbeadee94cbaecefff1b43a09a6fb5e649ee9f95",
+      "exception": "Add navigation for the separate AI authoring page.",
+      "expected_sha256": "e7904e01e752cf07281ddcd2ee11443d1ca5174b7e608e6b146a755feaccdb67"
+    },
+    {
+      "path": "src/ui/Menu/types.ts",
+      "baseline_sha256": "4f9ba0d700cd82fe5b3bccb50981b7e551a3b0f5d8d79199baa687517f87dde1"
+    },
+    {
+      "path": "src/ui/Menu/useQuestMenu.ts",
+      "baseline_sha256": "3bb1722b4a6763a531a72c40bf11084737c801e94745ba291e50c8014e3822af"
+    },
+    {
+      "path": "src/ui/Menu/useQuestlistMenu.ts",
+      "baseline_sha256": "f8ab2afff4e72b970e18c96c5bac89a8aba1e70c9f70634547c8f4b359631d37"
+    },
+    {
+      "path": "src/ui/Menu/useRemoteMenu.ts",
+      "baseline_sha256": "6197551ea28951e3e740e7a1350eaee78ad0c827e86f7229192894808dc48990"
+    },
+    {
+      "path": "src/ui/index.tsx",
+      "baseline_sha256": "6bb50704293d077f3530ace399e261c7eb043d2b001e2034531ec3d8ea0cd827",
+      "exception": "Route the AI page while preserving all native editor routes.",
+      "expected_sha256": "50a6835548d91792810af46e59ed41b646467b0b9f66b64dfcc3fd276f71a6ad"
+    },
+    {
+      "path": "src/ui/useTheme.ts",
+      "baseline_sha256": "bae76eb407d1c6d4ab89ddadd191903de114fd323ef2490d3fefce6dbae59f7c"
+    },
+    {
+      "path": "src/utils/data/arms.json",
+      "baseline_sha256": "ee1d0069ebb2bfeec8a790750df8a12cb02dee5ec9757bec56add6deb3dee7ea"
+    },
+    {
+      "path": "src/utils/data/chest.json",
+      "baseline_sha256": "97c5ac4c5eae5e893e0c6f22cbadf86140737cf342a0a13a6e357e89811734e3"
+    },
+    {
+      "path": "src/utils/data/head.json",
+      "baseline_sha256": "6cb18c2d9b21aef4955994e157a0eae09dd49425a4b71033cfccc7bb888180e3"
+    },
+    {
+      "path": "src/utils/data/items.json",
+      "baseline_sha256": "090b4f739ed2d4e04ce864bc06b2d8724a2cf11332e90382c4d5a555ab9fb33a"
+    },
+    {
+      "path": "src/utils/data/legs.json",
+      "baseline_sha256": "048cf12650e1e905596ec10f4c3d6b37850bd63fdf422126f77bd71b832a8b9c"
+    },
+    {
+      "path": "src/utils/data/melee.json",
+      "baseline_sha256": "e24dfccc18a015a57acf76371d63b6ae400dd94069d78a844967746a28874a3f"
+    },
+    {
+      "path": "src/utils/data/range.json",
+      "baseline_sha256": "e416248097ac3a3605a16f4a03f1f81cf2c2a7b890f052cb284fdc7957facd1e"
+    },
+    {
+      "path": "src/utils/data/waist.json",
+      "baseline_sha256": "391eb0707031e043e6504cd1e6c6a5a328fa0d17163ad0d4b6658ce84b09bfcb"
+    },
+    {
+      "path": "src/utils/db.ts",
+      "baseline_sha256": "af2d4157c6e89a6b12ee21c44ce12f07212ba149c9269b23e4a0a52dcc839456"
+    },
+    {
+      "path": "src/utils/equips.ts",
+      "baseline_sha256": "6fa254f84420ef0008a378957ca2d7e7808ae20c61932c3e2baae006c1309861"
+    },
+    {
+      "path": "src/utils/index.ts",
+      "baseline_sha256": "9f5546db68e6a6454f477c6f5efed44b4098b3a54b4ec2c78f9f59269ca81330"
+    },
+    {
+      "path": "src/utils/items.ts",
+      "baseline_sha256": "ad382ac3311c1562c36a7bf2ed72d711aa3d215d7fd42796e1413dbd32a1252c"
+    },
+    {
+      "path": "src/utils/mapPreview.ts",
+      "baseline_sha256": "2d8cc96c47e585c09170318bc7ba2a584d57fe7f66208bef49d4dd53e846ee18"
+    },
+    {
+      "path": "src/utils/maps.ts",
+      "baseline_sha256": "68c66af6821c097a9edd0bf9b0e7d5318c2234c5bbf91460d0b0f5676346714c"
+    },
+    {
+      "path": "src/utils/math.ts",
+      "baseline_sha256": "a80c3134816ac51749c4adab07be1a3df1e8fd4dac157faf68a59c619d2737cc"
+    },
+    {
+      "path": "src/utils/monsters.ts",
+      "baseline_sha256": "8b6a05d454ddaa07321824242bd4edbf5e6740d44b4fe18ccc88ba240d7335f6"
+    },
+    {
+      "path": "src/utils/objectiveType.ts",
+      "baseline_sha256": "5770aa5f843faa6bceabeb78d6f95792dfd33b6b0a961bc941b7164b6443e40e"
+    },
+    {
+      "path": "src/utils/prepare.ts",
+      "baseline_sha256": "5cc5fb9bea78a2f4ca9f9f695cc8802d5c8d03f08615df1677fb429c62236330"
+    },
+    {
+      "path": "src/utils/quest.ts",
+      "baseline_sha256": "485908d918230553f2ae2ca87bd43efd24849aaae84d52c603ea6259d804a2d8"
+    },
+    {
+      "path": "src/utils/questFile/genQuestProp.ts",
+      "baseline_sha256": "4f420d72c9b15f47824ee8adbf016a9db06894bdc992018d4e4e7469837e1f93"
+    },
+    {
+      "path": "src/utils/questFile/header.ts",
+      "baseline_sha256": "1ad70ae4611a567018c5cd10fee13bb6e7416972b4712d68dde4b4c25d0ead19"
+    },
+    {
+      "path": "src/utils/questFile/index.ts",
+      "baseline_sha256": "bc67bbfc90b658b81ff05626ad8a12f8bc59ccc6a7b0b302968d8882dc6ee06a"
+    },
+    {
+      "path": "src/utils/questFile/map.ts",
+      "baseline_sha256": "1944e73068ac96f87469b690fb77622734c6c031b534dd43ac8cef5bbc31d587"
+    },
+    {
+      "path": "src/utils/questFile/mapZones.ts",
+      "baseline_sha256": "b5e0a7abd61fd56f21685df9d2e8ce07dc0f10d8ce59ce363ced31032ea6e3a7"
+    },
+    {
+      "path": "src/utils/questFile/monsters.ts",
+      "baseline_sha256": "289cddedaaf727dd9d37ff36ce8350947e47aadbff6967c155b40a7bee079c1e"
+    },
+    {
+      "path": "src/utils/questFile/questStrings.ts",
+      "baseline_sha256": "5450b3137705c4b5e8689eedb10eb69e3885b59b87c44fb46bc6f6964ec83cc6"
+    },
+    {
+      "path": "src/utils/questFile/questTypeFlags.ts",
+      "baseline_sha256": "d32ecce21e3befe1f12735df555719910ed2f25542784042817d02122df511fe",
+      "exception": "Match the corrected full u32 failure representation in TypeScript.",
+      "expected_sha256": "72b616ae8bdf3e1d1ebdf20d6841229378b4045cc23d8a58303aa1eecf7c9ae6"
+    },
+    {
+      "path": "src/utils/questFile/reward.ts",
+      "baseline_sha256": "c4763ac0d416b5d85d0d723ed0d57953fe588b6a1eeb819a4a9ce36c7fb8b7f4"
+    },
+    {
+      "path": "src/utils/questFile/supplyItems.ts",
+      "baseline_sha256": "1b98c52c9e50cdd635f32f91ec1d92941eaa21492903852e74bfb4f6a9e306f2"
+    },
+    {
+      "path": "src/utils/questlist/index.ts",
+      "baseline_sha256": "68103e05c08029cb781c8619cae27224ac68ac9eb5a47252283c64f6209886b3"
+    },
+    {
+      "path": "src/utils/questlist/questInfo.ts",
+      "baseline_sha256": "dc5a45f15f69f814842e68f18f9e7ff056f797cae0a6bdc59b08898149590870"
+    },
+    {
+      "path": "src/utils/questlist/questlist.ts",
+      "baseline_sha256": "925cd3b86358a3a17fcb352bd22ffa7a604f18cb07110b6142d4528bd4d7436d"
+    },
+    {
+      "path": "src/utils/requirements.ts",
+      "baseline_sha256": "6abf7eb19016874ad73187db06aa15b6d3fc925040c2eb5812296bd0b787bab0"
+    },
+    {
+      "path": "src/utils/util.ts",
+      "baseline_sha256": "b50f3539b3263c817280f53327aaf0af31e8997658c35ca5923b6f980d054d8c"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "baseline_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    }
+  ],
+  "additional_sources": [
+    "src/tabs/AIQuestBuilder.tsx",
+    "src-tauri/src/ai_bridge.rs",
+    "src-tauri/src/editor/tests/builder_export.rs"
+  ]
+}

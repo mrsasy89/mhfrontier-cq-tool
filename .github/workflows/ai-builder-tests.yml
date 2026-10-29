@@ -1,0 +1,50 @@
+name: AI engine and CQ frontend checks
+on: [push, pull_request]
+jobs:
+  unit:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.14']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python -m mhfz_builder --help
+      - run: python scripts/check_cq_parity.py
+  beta:
+    needs: unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/package_beta.py
+      - run: python dist/beta-0.2.0b12/quest-builder.pyz --version
+      - run: python dist/beta-0.2.0b12/quest-builder.pyz --help
+      - uses: actions/upload-artifact@v7
+        with:
+          name: mhfz-ai-quest-builder-beta
+          path: |
+            dist/beta-0.2.0b12/*.zip
+            dist/beta-0.2.0b12/*.pyz
+            dist/beta-0.2.0b12/SHA256SUMS
+            dist/beta-0.2.0b12/package-manifest.json
+          if-no-files-found: error
+          retention-days: 30
+
+  desktop-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --global yarn@1.22.22
+      - run: yarn install --frozen-lockfile
+      - run: yarn check-types
+      - run: yarn build

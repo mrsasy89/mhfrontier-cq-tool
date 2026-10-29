@@ -16,12 +16,13 @@ const context = createContext<ToolState>({} as ToolState);
 export function ToolContextProvider({
   children,
 }: ToolContextProps) {
-  const [tool, setTool] = useState('QuestEditor');
+  const [tool, setTool] = useState('AIQuestBuilder');
 
   const tools = useMemo(() => ([
+    'AIQuestBuilder',
     'QuestEditor',
     'QuestlistEditor',
-    'RemoteEditor',
+    // Remote editor source is retained; database actions are disabled in this beta.
   ]), []);
   
   return (

@@ -1,92 +1,40 @@
-<h1 align="center">
-  <img src="./screenshots/logo.png" alt="Clash" width="128" />
-  <br>
-  MHFrontier CQ Tool
-  <br>
-</h1>
+# MHFrontier CQ Tool - AI integration
 
-MHFrontier CQ Tool is a free and open-source solution to edit and create quests for Monster Hunter Frontier Z
+This is the **ai-quest-builder development branch of the MHFrontier CQ Editor fork**, adding evidence-led quest authoring through each user's own Codex/ChatGPT account. The CQ Editor is the base of the application: its quest tabs, native Rust parser/serializer, better_cursor library and metadata are reused under LGPL v3. Original authors retain their copyrights. See [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE).
 
-### Table of Contents
+Repository: [mrsasy89/mhfrontier-cq-tool](https://github.com/mrsasy89/mhfrontier-cq-tool/tree/ai-quest-builder). This branch starts at CQ commit [1176c07](https://github.com/mrsasy89/mhfrontier-cq-tool/commit/1176c07ede6770117684f2643efd3315a940872b). Existing branches remain separate. The earlier standalone prototype remains as development/test history in [mhfz-ai-quest-builder](https://github.com/mrsasy89/mhfz-ai-quest-builder).
 
-- [Install](#install)
-- [Instructions](#instructions)
-- [Troubleshooting](#troubleshooting)
-- [Contributions](#contributions)
-- [License](#license)
+## Primary interface: CQ desktop editor
 
-## Install
+Run **Start.cmd** or **GUI.cmd** from a local desktop build. The GUI is the user interface; the terminal wizard is available through **Dev.cmd** for development and diagnosis only. Python 3.11+, Microsoft Edge WebView2 and a local native build are required. This is a development beta, not a validated installer or a guarantee of client compatibility. No BINs, game corpus, executables, account credentials or private configuration are committed.
 
-Download from the [Github Release](https://github.com/Invasor-de-Fronteiras/mhfrontier-cq-tool/releases) for Windows, Linux and Mac.
+Choose **AIQuestBuilder** to sign in, select a map, describe a quest, set preferences, confirm an unused file ID, answer missing decisions and review/export. Codex is primary, using the official CLI and each user's own login. Access is reused throughout the editor session. Gemini API and OpenAI Platform API are explicit alternatives; there is no automatic provider, account or billing fallback.
 
-### Prerequisites
+An hourglass shows the current phase and elapsed time. The GUI distinguishes waiting for the provider from waiting for your response. Elapsed time alone is not presented as verified progress. Choose **QuestEditor** to inspect or manually edit a laboratory BIN with the inherited CQ tabs.
 
-**[ReFrontier](https://github.com/mhvuze/ReFrontier)** is required to decompress quest files before opening them in the editor.
+## Evidence-led authoring engine
 
-Setup steps:
-1. Download ReFrontier from [its repository](https://github.com/mhvuze/ReFrontier/releases)
-2. Place the `ReFrontier.exe` executable in the **same folder** as the CQ Tool executable
-3. The editor will detect it automatically and enable the built-in decompress feature
+The engine interprets the prompt, searches the entire configured parsed corpus, compares current references and can request further typed corpus/item searches. It receives explicit domain rules and qualified historical case notes. This is portable authoring logic and evidence, **not model fine-tuning or automatic access to private chat memory**.
 
-> ReFrontier is **not bundled** with CQ Tool — you must download and place it manually.
+Typed compilation supports quest ID, texts, duration, stat-table selectors, flags, variants, completion settings, individual/aggregate objectives, copied native spawn records and same-map position evidence, and selected reward tables using catalog item IDs. Unknown original bytes and the native map package are preserved. Missing quantities, weights, thresholds or ambiguous goals produce questions. Invalid proposals receive bounded validation feedback. Custom choices no longer stop before calling the model.
 
-## Instructions
+Sources stay read-only. Laboratory exports, hash-backed originals/donors, plans, validation feedback and byte-diff manifests stay in a separate workspace. No server installation, database access, SQL execution, server restart or game launch occurs. Cross-species terrain placement, simultaneous combat, migration, HC behavior, completion and payout still require client tests. See [engine workflow](docs/AUTHORING-ENGINE.md), [BIN support](docs/building.md), [domain rules](knowledge/rules.md) and [verification status](docs/STATUS.md).
 
-> If you are using [Erupe](https://github.com/ZeruLight/Erupe), set `DevMode` and `QuestDebugTools` to **true** on `config.json`. It shows the quest filename on console logs.
+## CQ baseline
 
-### Decompress the Quest
+Inherited editor code is compared with the pinned CQ revision. Unrelated local calibration experiments were removed. The [parity manifest](docs/cq-baseline.json) records identical baseline files and narrow, explicit exceptions: AI routing, workspace save guards, disabled direct database/ReFrontier actions and the verified full u32 failure field. **The whole application is not claimed byte-identical to upstream.** Run `python scripts/check_cq_parity.py` to detect unreviewed drift. See [CQ parity](docs/CQ-PARITY.md).
 
-Quest files from the server are compressed and **must be decompressed** before the editor can read them. Use [ReFrontier](https://github.com/mhvuze/ReFrontier) for that. With ReFrontier in the same folder as the editor, you can decompress directly from the editor UI.
+## Development only
 
-<img src="./screenshots/refrontier.png" alt="Quest" width="300" />
+The frontend stays in src/ and the native editor in src-tauri/, matching CQ's layout. The shared engine is in mhfz_builder/. The source-only Python archive is a developer artifact, not the desktop distribution.
 
-### Quest File
+```powershell
+python -m unittest discover -s tests -v
+python scripts/check_cq_parity.py
+npm run check-types
+npm exec -- eslint src/tabs/AIQuestBuilder.tsx
+npm run test:asset-runtime
+npm run build
+```
 
-The quest is currently a binary file, [Erupe](https://github.com/ZeruLight/Erupe) does not implement each part of the quest, it reads all file content and sends it to the client.
-
-The quest’s file name is not random, it is composed of the quest ID, in-game daytime and in-game season. Below is an example of how it looks:
-
-<img src="./screenshots/quest-id.png" alt="Quest" width="300" />
-
-It's important to understand this so you can get the quests on your server and on your quest list.
-
-### New Quest
-
-> Currently, the editor does not support creating a quest from scratch, because it is not possible to edit a 100% map yet.
-
-To create a new quest, copy an existing one, [decompress](#decompress-the-quest) it and rename the [quest id](#quest-file) to an id that is not already being used in your server. Open the quest in the editor and change the **Quest Id** in **Quest Information** to chosen id.
-
-Nice! Now do the quest changes as your desire and save it.
-
-### Quest List Manager
-
-To show quest in game it's necessary to add quest in questlist, for its you need to change the selected tool **QuestEditor** to **QuestlistEditor**.
-
-![SelectTool](./screenshots/select_tool.png)
-
-Now you click in **Load Folder** and select questlist folder, after this you can manager your quests in menu **Questlist** and add quests clicking on **Add Quest from file**.
-
-After all you can save questlist in **Save Questlist**.
-
-#### Quest List Manager for [Erupe 9.1](https://github.com/ZeruLight/Erupe/releases/tag/v9.1.0)
-
-After update [9.1](https://github.com/ZeruLight/Erupe/releases/tag/v9.1.0), the quest list files were removed and now we require to export a template from the quest file to folder **/bin/events**.
-
-To do this just go to **Export quest** in QuestEditor and choose questlist options.
-
-![ExportQuest](./screenshots/export_quest.png)
-
-## Troubleshooting
-
-### "The system cannot find the path specified" when using ReFrontier
-
-ReFrontier executable is not in the correct location. Make sure `ReFrontier.exe` is in the **same folder** as the CQ Tool executable, not in a subfolder or a different directory.
-
-
-## Contributions
-
-Issue and PR welcome!
-
-## License
-
-GPL-3.0 License. See the [License here](/LICENSE) for details.
+Build the native editor with `cargo build --release --locked` from src-tauri using compatible Rust/MSVC tools. Dev.cmd and `python -m mhfz_builder --help` expose the same engine for diagnosis. ReFrontier operates exclusively on copies. Report skipped fixtures, coverage gaps and pending GUI/client checks explicitly; follow [ECC-WORKFLOW.md](docs/ECC-WORKFLOW.md) for every change.

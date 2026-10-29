@@ -1,0 +1,2032 @@
+{
+  "schema_version": 1,
+  "scope": "Visual overview research only; no binary texture selector, migration or calibration proof",
+  "reference_revision": "b7911a0f8c87891f7196ef8c394e182f062e9d57",
+  "states": {
+    "cross_checked_visual": "Native image compared with a Frontier source and local quest/catalog facts; not a client runtime test",
+    "variant_pending": "Family identified, exact variant or numbering requires review",
+    "candidate_review": "Proposed visual association awaiting user confirmation",
+    "partial_overview": "Only part of the map is represented"
+  },
+  "bindings": {
+    "1": [
+      {
+        "native_index": 0,
+        "sha256": "2a6d6eafa4d4cc84ad53d98ea73e46ed3c7c344c9b5777db6984f910e9e3f0be",
+        "label": "Siege Fortress Day / native texture 0",
+        "review_state": "variant_pending",
+        "notes": "Siege family layout; the exact Day reference supplied by the user takes precedence. Night remains separate.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/toride-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Siege Fortress Day / Siege Fortress Night",
+        "view_label": "Siege Fortress Day / Siege Fortress Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "23": [
+      {
+        "native_index": 0,
+        "sha256": "2a6d6eafa4d4cc84ad53d98ea73e46ed3c7c344c9b5777db6984f910e9e3f0be",
+        "label": "Siege Fortress Night / native texture 0",
+        "review_state": "variant_pending",
+        "notes": "Siege family layout; the exact Day reference supplied by the user takes precedence. Night remains separate.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/toride-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Siege Fortress Day / Siege Fortress Night",
+        "view_label": "Siege Fortress Day / Siege Fortress Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "2": [
+      {
+        "native_index": 1,
+        "sha256": "23fe48b484da6f731d54c0de7d3a08fe782be8a830764c5a0d409aea632aca0b",
+        "label": "Forest and Hills Day / native texture 1",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/mori-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Forest and Hills Day / Forest and Hills Night",
+        "view_label": "Forest and Hills Day / Forest and Hills Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "16": [
+      {
+        "native_index": 1,
+        "sha256": "23fe48b484da6f731d54c0de7d3a08fe782be8a830764c5a0d409aea632aca0b",
+        "label": "Forest and Hills Night / native texture 1",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/mori-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Forest and Hills Day / Forest and Hills Night",
+        "view_label": "Forest and Hills Day / Forest and Hills Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "4": [
+      {
+        "native_index": 3,
+        "sha256": "e330ae90d5439320cb4e7c0badf811b0e9227784a3bbbafe327ec698a84cde2b",
+        "label": "Swamp Day / native texture 3",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/numa-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Swamp Day / Swamp Night",
+        "view_label": "Swamp Day / Swamp Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "18": [
+      {
+        "native_index": 3,
+        "sha256": "e330ae90d5439320cb4e7c0badf811b0e9227784a3bbbafe327ec698a84cde2b",
+        "label": "Swamp Night / native texture 3",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/numa-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Swamp Day / Swamp Night",
+        "view_label": "Swamp Day / Swamp Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "11": [
+      {
+        "native_index": 13,
+        "sha256": "4f7255ac43828cd1af6d574086abc6a9890a715be0d68fcb86564f94877e52f3",
+        "label": "Snowy Mountains Day / native texture 13",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/yuki-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Snowy Mountains Day / Snowy Mountains Night",
+        "view_label": "Snowy Mountains Day / Snowy Mountains Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "21": [
+      {
+        "native_index": 13,
+        "sha256": "4f7255ac43828cd1af6d574086abc6a9890a715be0d68fcb86564f94877e52f3",
+        "label": "Snowy Mountains Night / native texture 13",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/yuki-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Snowy Mountains Day / Snowy Mountains Night",
+        "view_label": "Snowy Mountains Day / Snowy Mountains Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "26": [
+      {
+        "native_index": 22,
+        "sha256": "c1e069e34af90c8a5cda40ad05e21c4afbca00185779deae4b1ba7464214ffd1",
+        "label": "Great Forest Day / native texture 22",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/zyu-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Great Forest Day / Great Forest Night",
+        "view_label": "Great Forest Day / Great Forest Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "27": [
+      {
+        "native_index": 22,
+        "sha256": "c1e069e34af90c8a5cda40ad05e21c4afbca00185779deae4b1ba7464214ffd1",
+        "label": "Great Forest Night / native texture 22",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/zyu-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Great Forest Day / Great Forest Night",
+        "view_label": "Great Forest Day / Great Forest Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "31": [
+      {
+        "native_index": 28,
+        "sha256": "fbbdb9ec657a40ee2b43623fdc3a35163faf48332ce09a5ffe2b3efecef3f480",
+        "label": "Gorge Day / native texture 28",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kyou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Gorge Day / Gorge Night",
+        "view_label": "Gorge Day / Gorge Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "32": [
+      {
+        "native_index": 28,
+        "sha256": "fbbdb9ec657a40ee2b43623fdc3a35163faf48332ce09a5ffe2b3efecef3f480",
+        "label": "Gorge Night / native texture 28",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kyou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Gorge Day / Gorge Night",
+        "view_label": "Gorge Day / Gorge Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "50": [
+      {
+        "native_index": 34,
+        "sha256": "9e650d5e71003b9c471e645dd6cd55e7e23de770000b4023f119c22561d2458a",
+        "label": "Highlands Day / native texture 34",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Highlands Day / Highlands Night",
+        "view_label": "Highlands Day / Highlands Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "51": [
+      {
+        "native_index": 34,
+        "sha256": "9e650d5e71003b9c471e645dd6cd55e7e23de770000b4023f119c22561d2458a",
+        "label": "Highlands Night / native texture 34",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Highlands Day / Highlands Night",
+        "view_label": "Highlands Day / Highlands Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "55": [
+      {
+        "native_index": 35,
+        "sha256": "58bfacb2b89d7c92f31245cb960e12ff2dd158a8bbbd7dc780afd228be8508a1",
+        "label": "Fortress Day / native texture 35",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/def-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Fortress Day / Fortress Night / Interceptor Base",
+        "view_label": "Fortress Day / Fortress Night / Interceptor Base",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "56": [
+      {
+        "native_index": 35,
+        "sha256": "58bfacb2b89d7c92f31245cb960e12ff2dd158a8bbbd7dc780afd228be8508a1",
+        "label": "Fortress Night / native texture 35",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/def-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Fortress Day / Fortress Night / Interceptor Base",
+        "view_label": "Fortress Day / Fortress Night / Interceptor Base",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "60": [
+      {
+        "native_index": 40,
+        "sha256": "5d9fd07718fe698a88575d0cc8004f025b6b9ad575d57664b7dc7a062e684bc9",
+        "label": "Polar Sea Day / native texture 40",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kyoku-g.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Polar Sea Day / Polar Sea Night",
+        "view_label": "Polar Sea Day / Polar Sea Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "61": [
+      {
+        "native_index": 40,
+        "sha256": "5d9fd07718fe698a88575d0cc8004f025b6b9ad575d57664b7dc7a062e684bc9",
+        "label": "Polar Sea Night / native texture 40",
+        "review_state": "variant_pending",
+        "notes": "Family visual reference. Sharing an atlas does not establish identical Day/Night areas or transitions.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kyoku-g.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Polar Sea Day / Polar Sea Night",
+        "view_label": "Polar Sea Day / Polar Sea Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "3": [
+      {
+        "native_index": 2,
+        "sha256": "ffc8814ec972f0d3957eb3e6b521cf9700361b182044ccd7b98f20d494d3cab1",
+        "label": "Desert Day / native texture 2",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/saba-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Desert Day",
+        "view_label": "Desert Day",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "17": [
+      {
+        "native_index": 18,
+        "sha256": "d9b0e0d505b1a6cb2953b8352f944ee57332306c98437777f33933ce9d150356",
+        "label": "Desert Night / native texture 18",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/saba-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Desert Night",
+        "view_label": "Desert Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "7": [
+      {
+        "native_index": 8,
+        "sha256": "c096602f1819122b69f4dfd08ade8a950ea06c7128fee4d313233460a79bf4fa",
+        "label": "Castle Schrade / native texture 8",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/siro-zyoui.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Castle Schrade",
+        "view_label": "Castle Schrade",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "5": [
+      {
+        "native_index": 4,
+        "sha256": "faf189cb6b34b9a01cd09083e1aea47e6f21065ae45c16149e96d81ff15e475b",
+        "label": "Volcano Day / native texture 4",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kaza-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Volcano Day",
+        "view_label": "Volcano Day",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "19": [
+      {
+        "native_index": 19,
+        "sha256": "94c80aa7f3f78c53a9096b958079ce47a43ad5113ffde2822750b60c9b68f138",
+        "label": "Volcano Night / native texture 19",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kaza-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Volcano Night",
+        "view_label": "Volcano Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "28": [
+      {
+        "native_index": 23,
+        "sha256": "88c7ecf7e448cf08c315a851de6012b9819e9013399b01f0a88b27b7b986d675",
+        "label": "Volcano 2 Day / native texture 23",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kaza-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Volcano 2 Day / Volcano - Extended - Day",
+        "view_label": "Volcano 2 Day / Volcano - Extended - Day",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "29": [
+      {
+        "native_index": 24,
+        "sha256": "2ac9b89a7fbc7fac4306f98de8c7186e578c4d8704e28f3b64dc5d75ac05ddc6",
+        "label": "Volcano 2 Night / native texture 24",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/kaza-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Volcano 2 Night / Volcano - Extended - Night",
+        "view_label": "Volcano 2 Night / Volcano - Extended - Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "64": [
+      {
+        "native_index": 44,
+        "sha256": "6b8bb88635706789ae5f97b49f93727babf8e6e43245da417e1a996ffd2cdb90",
+        "label": "Flower Field Day / native texture 44",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/hana-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Flower Field",
+        "view_label": "Flower Field"
+      }
+    ],
+    "65": [
+      {
+        "native_index": 44,
+        "sha256": "6b8bb88635706789ae5f97b49f93727babf8e6e43245da417e1a996ffd2cdb90",
+        "label": "Flower Field Night / native texture 44",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/hana-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Flower Field",
+        "view_label": "Flower Field"
+      }
+    ],
+    "79": [
+      {
+        "native_index": 49,
+        "sha256": "d27f16ce9d53d70c96bdd7d1f2a0f5df7ae09464ad51da06e76e1c2043ca2937",
+        "label": "White Lake Day / native texture 49",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/bya-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "White Lake Day",
+        "view_label": "White Lake Day"
+      }
+    ],
+    "80": [
+      {
+        "native_index": 50,
+        "sha256": "bec99bc6b12948f153cba28e7cab7a5f5568bee8d672b2af4edd6ad82fa2974a",
+        "label": "White Lake Night / native texture 50",
+        "review_state": "cross_checked_visual",
+        "notes": "Full native overview visually cross-checked against the Frontier reference. Volcano base/extended and White Lake area6 differences remain distinct.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/bya-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "White Lake Night",
+        "view_label": "White Lake Night"
+      }
+    ],
+    "6": [
+      {
+        "native_index": 5,
+        "sha256": "db57b9041b65961169e6d0d195a1ccd962a08f4e12ceea3c30e8ec5960eac81a",
+        "label": "Jungle Day / native texture 5",
+        "review_state": "variant_pending",
+        "notes": "Jungle family; the exact Day/Night/quest variant requires confirmation.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/mitu-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Jungle Day",
+        "view_label": "Jungle Day",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "20": [
+      {
+        "native_index": 20,
+        "sha256": "21c0aa2b14426b93cd2ced49332be6390b663696e8d6f869c8027a8ac54cae62",
+        "label": "Jungle Night / native texture 20",
+        "review_state": "variant_pending",
+        "notes": "Jungle family; the exact Day/Night/quest variant requires confirmation.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/mitu-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Jungle Night",
+        "view_label": "Jungle Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "12": [
+      {
+        "native_index": 14,
+        "sha256": "172304c8f9bc9ccb2ba413b47aaf94a8d2a4cababf25f248739b69795b92e990",
+        "label": "Town Siege Day / native texture 14",
+        "review_state": "variant_pending",
+        "notes": "Town family candidate. Local Town Night catalog lists only Base, but parsed quest bosses use stage182: catalog stage list is incomplete.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Town Siege Day / Town Siege night",
+        "view_label": "Town Siege Day / Town Siege night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "22": [
+      {
+        "native_index": 14,
+        "sha256": "172304c8f9bc9ccb2ba413b47aaf94a8d2a4cababf25f248739b69795b92e990",
+        "label": "Town Siege night / native texture 14",
+        "review_state": "variant_pending",
+        "notes": "Town family candidate. Local Town Night catalog lists only Base, but parsed quest bosses use stage182: catalog stage list is incomplete.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Town Siege Day / Town Siege night",
+        "view_label": "Town Siege Day / Town Siege night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "13": [
+      {
+        "native_index": 15,
+        "sha256": "5039752240dbef1b89281f7d2552b667a19fad546b5630d3ee80a835bc14d6a2",
+        "label": "Tower 1 / native texture 15",
+        "review_state": "variant_pending",
+        "notes": "Tower variants must remain separate. Frontier source explicitly notes swapped area4/5 numbering; verify this ID/atlas pairing with the user.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/tou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tower 1 / Short Tower",
+        "view_label": "Tower 1 / Short Tower",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "14": [
+      {
+        "native_index": 16,
+        "sha256": "5bb826bc9a0f83897587f5b6522ecbdc7d8534973345a7b72aa23750b9a638a7",
+        "label": "Tower 2 / native texture 16",
+        "review_state": "variant_pending",
+        "notes": "Tower variants must remain separate. Frontier source explicitly notes swapped area4/5 numbering; verify this ID/atlas pairing with the user.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/tou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tower 2 / Short Tower w/ Drop",
+        "view_label": "Tower 2 / Short Tower w/ Drop",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "15": [
+      {
+        "native_index": 17,
+        "sha256": "9bcb66cb5b537a3c4e346461d38eb0ec21269aa785f1852da87f5f8b3e285402",
+        "label": "Tower 3 / native texture 17",
+        "review_state": "variant_pending",
+        "notes": "Tower variants must remain separate. Frontier source explicitly notes swapped area4/5 numbering; verify this ID/atlas pairing with the user.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/tou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tower 3 / Long Tower",
+        "view_label": "Tower 3 / Long Tower",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "52": [
+      {
+        "native_index": 33,
+        "sha256": "f63b583713913b8771826beb39ab39c224296054436665057fd1bff43e4de474",
+        "label": "Tower with Nesthole / native texture 33",
+        "review_state": "variant_pending",
+        "notes": "Tower variants must remain separate. Frontier source explicitly notes swapped area4/5 numbering; verify this ID/atlas pairing with the user.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/tou-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tower with Nesthole",
+        "view_label": "Tower with Nesthole",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "47": [
+      {
+        "native_index": 30,
+        "sha256": "c562ec08625cd8ae1a7cf56cb7464756a6d69812677a37484d019fe4c5e91f51",
+        "label": "Solitude Isle 1 / native texture 30",
+        "review_state": "candidate_review",
+        "notes": "Raviente phase candidate; local phase quest IDs and texture area labels align, but the exact phase association needs user confirmation.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sima-kai.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Solitude Isle 1 / Solitude Island Area 1 Map",
+        "view_label": "Solitude Isle 1 / Solitude Island Area 1 Map",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "48": [
+      {
+        "native_index": 31,
+        "sha256": "867bb0d6d82bafde4400f59a28c1b505028c8a0b143bb52202cd73c612830e6e",
+        "label": "Solitude Isle 2 / native texture 31",
+        "review_state": "candidate_review",
+        "notes": "Raviente phase candidate; local phase quest IDs and texture area labels align, but the exact phase association needs user confirmation.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sima-kai.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Solitude Isle 2 / Solitude Island Area 2 Map",
+        "view_label": "Solitude Isle 2 / Solitude Island Area 2 Map",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "49": [
+      {
+        "native_index": 32,
+        "sha256": "9bd1d4e34733a48071217787bae6495714c8566f15ac4b330a27444d210dcd45",
+        "label": "Solitude Isle 3 / native texture 32",
+        "review_state": "candidate_review",
+        "notes": "Raviente phase candidate; local phase quest IDs and texture area labels align, but the exact phase association needs user confirmation.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sima-kai.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records"
+        ]
+      }
+    ],
+    "57": [
+      {
+        "native_index": 43,
+        "sha256": "b3d673a1a8bcfe89669c7974ab857ed286da7fce12fbb8338aaad3011fce4a38",
+        "label": "Tidal Island Day / native texture 43",
+        "review_state": "partial_overview",
+        "notes": "CORRECTED: Tidal Island surface section, not Flower Field. Underground area4 and multi-level area5 require additional views; do not call this a complete layout.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/shio-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tidal Island surface / underground views still required",
+        "view_label": "Tidal Island surface / underground views still required",
+        "coverage": "partial",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      },
+      {
+        "native_index": 37,
+        "sha256": "f4f5b0819d624fd1a3ce653351d2ff6fe0bc6991591293094e355b46082e0dea",
+        "label": "Tidal Island Day / additional layer atlas",
+        "view_label": "Tide Island Day / additional layouts",
+        "review_state": "variant_pending",
+        "visual_review": "correct",
+        "notes": "User identified this multi-part atlas as Tide Island Day. Keep it intact and separate from surface texture43; exact layer/area correspondences remain unverified.",
+        "evidence": [
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+          "Local full1024x256 Frontier native atlas"
+        ]
+      }
+    ],
+    "58": [
+      {
+        "native_index": 43,
+        "sha256": "b3d673a1a8bcfe89669c7974ab857ed286da7fce12fbb8338aaad3011fce4a38",
+        "label": "Tidal Island Night / native texture 43",
+        "review_state": "partial_overview",
+        "notes": "CORRECTED: Tidal Island surface section, not Flower Field. Underground area4 and multi-level area5 require additional views; do not call this a complete layout.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/shio-sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Tidal Island surface / underground views still required",
+        "view_label": "Tidal Island surface / underground views still required",
+        "coverage": "partial",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "8": [
+      {
+        "native_index": 9,
+        "sha256": "28a985a1305c73902a8241945c1c92f52b8a05095b478d3225ae0b63ab11ba67",
+        "label": "Crimson Battleground / native texture 9",
+        "review_state": "candidate_review",
+        "notes": "User requests in-game verification; keep this association unresolved.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "unsure",
+        "reviewed_name": "Crimson Battleground",
+        "view_label": "Crimson Battleground"
+      }
+    ],
+    "35": [
+      {
+        "native_index": 26,
+        "sha256": "ae2037d9d15a2360371cfe8c62ec5c29159ed9ef505b26cd1d3eaf4c22f24212",
+        "label": "Battlefield Day / native texture 26",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Battlefield Day",
+        "view_label": "Battlefield Day",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "44": [
+      {
+        "native_index": 27,
+        "sha256": "bb170fd3ee78cde5edbfa751417876f97e4c910d8d49583725ea83696fb80297",
+        "label": "Top of Great Forest / native texture 27",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Top of Great Forest / Sacred Pinnacle",
+        "view_label": "Top of Great Forest / Sacred Pinnacle",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "53": [
+      {
+        "native_index": 36,
+        "sha256": "32bf763a0f517874d0595ce8a4e56dcbd9621bda8fbbd9fc69fccc6bd04d6107",
+        "label": "Arena with Moat Day / native texture 36",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Arena with Moat Day / Arena with Moat Night",
+        "view_label": "Arena with Moat Day / Arena with Moat Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "54": [
+      {
+        "native_index": 36,
+        "sha256": "32bf763a0f517874d0595ce8a4e56dcbd9621bda8fbbd9fc69fccc6bd04d6107",
+        "label": "Arena with Moat Night / native texture 36",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Arena with Moat Day / Arena with Moat Night",
+        "view_label": "Arena with Moat Day / Arena with Moat Night",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "62": [
+      {
+        "native_index": 41,
+        "sha256": "264a783b0a3d7f7d4bc8f8087d8d454dd7ac596f0667635e040cc9903446a071",
+        "label": "World's End / native texture 41",
+        "review_state": "user_confirmed",
+        "notes": "Confirmed directly by the user using World's End.png, 2026-10-28. Preview crop hides the icon footer; source stays intact.",
+        "evidence": [
+          "Direct user confirmation and identical RGBA comparison to uploaded World's End.png",
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "World's End",
+        "view_label": "World's End",
+        "display_crop": [
+          0,
+          0,
+          256,
+          240
+        ]
+      }
+    ],
+    "63": [
+      {
+        "native_index": 42,
+        "sha256": "4626737d6bc382e44dbff7b48181de3c93a2c7dfdd6b2a320159297e69ceb6a1",
+        "label": "Large Airship / native texture 42",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Large Airship",
+        "view_label": "Large Airship"
+      }
+    ],
+    "66": [
+      {
+        "native_index": 45,
+        "sha256": "2eb831f3fb1afaf6e6e0c3367b740de335580bf9d17440da54a420642177791d",
+        "label": "Deep Crater / native texture 45",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Deep Crater",
+        "view_label": "Deep Crater"
+      }
+    ],
+    "67": [
+      {
+        "native_index": 46,
+        "sha256": "4d72f422811e1fc5cbc376717370927eb42a4de385c7663ed3b8b38a22b78039",
+        "label": "Bamboo Forest Day / native texture 46",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Bamboo Forest Day / Bamboo Forest Night",
+        "view_label": "Bamboo Forest Day / Bamboo Forest Night"
+      }
+    ],
+    "68": [
+      {
+        "native_index": 46,
+        "sha256": "4d72f422811e1fc5cbc376717370927eb42a4de385c7663ed3b8b38a22b78039",
+        "label": "Bamboo Forest Night / native texture 46",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Bamboo Forest Day / Bamboo Forest Night",
+        "view_label": "Bamboo Forest Day / Bamboo Forest Night"
+      }
+    ],
+    "69": [
+      {
+        "native_index": 47,
+        "sha256": "580cc32bc9d378c7452d47106d9d460e2e057f503462b2c3f8b636f5aee179fb",
+        "label": "Battlefield 2 Day / native texture 47",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Battlefield 2 Day",
+        "view_label": "Battlefield 2 Day"
+      }
+    ],
+    "91": [
+      {
+        "native_index": 52,
+        "sha256": "a49904fc18494a8f889359495004442a907bb6e5cd60044b270c8175464b05e5",
+        "label": "Cloud Viewing Fortress / native texture 52",
+        "view_label": "Cloud Viewing Fortress",
+        "review_state": "variant_pending",
+        "visual_review": "correct",
+        "notes": "Visual identity corrected by the user from texture51 to52. Exact map-ID checkbox was not selected; no binary or runtime verification claimed.",
+        "evidence": [
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+          "Local Frontier catalog map91 and native PNG SHA256"
+        ]
+      }
+    ],
+    "92": [
+      {
+        "native_index": 53,
+        "sha256": "b4aabc988ce918dc304a2cc97ab1feea23abb118bac8252b15bb852973cc39f9",
+        "label": "Painted Falls Day / native texture 53",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Painted Falls Day",
+        "view_label": "Painted Falls Day"
+      }
+    ],
+    "93": [
+      {
+        "native_index": 54,
+        "sha256": "b4aabc988ce918dc304a2cc97ab1feea23abb118bac8252b15bb852973cc39f9",
+        "label": "Painted Falls Nigh / native texture 54",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Painted Falls Night",
+        "view_label": "Painted Falls Night"
+      }
+    ],
+    "94": [
+      {
+        "native_index": 55,
+        "sha256": "0ddca8bede7ddd30cb12480e47874eaa827e6e5f73ed1f213d7e09d48186f2f4",
+        "label": "Sanctuary / native texture 55",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Sanctuary",
+        "view_label": "Sanctuary"
+      }
+    ],
+    "96": [
+      {
+        "native_index": 56,
+        "sha256": "b9ffbb9fa667ff8ead290a9b2c21c7f5d9e3ca2107a6ac92079169dd882e56f8",
+        "label": "Sacred Pinnacle / native texture 56",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Sacred Pinnacle",
+        "view_label": "Sacred Pinnacle"
+      }
+    ],
+    "97": [
+      {
+        "native_index": 58,
+        "sha256": "d436639d414f85b2274e0a97df31a2da3d10efa090ed15e5a777fb1f5fb73a85",
+        "label": "Historic Site / native texture 58",
+        "review_state": "candidate_review",
+        "notes": "Candidate based on native appearance, local quest destination and boss/stage records. External page is context only, not confirmation of this texture mapping.",
+        "evidence": [
+          "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+          "Local Frontier map.txb PNG and SHA256",
+          "Local parsed quest map ID/stage records",
+          "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+        ],
+        "visual_review": "correct",
+        "reviewed_name": "Historic Site",
+        "view_label": "Historic Site"
+      }
+    ]
+  },
+  "atlas_labels": {
+    "0": {
+      "sha256": "2a6d6eafa4d4cc84ad53d98ea73e46ed3c7c344c9b5777db6984f910e9e3f0be",
+      "names": [
+        "Siege Fortress Day / Siege Fortress Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "1": {
+      "sha256": "23fe48b484da6f731d54c0de7d3a08fe782be8a830764c5a0d409aea632aca0b",
+      "names": [
+        "Forest and Hills Day / Forest and Hills Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "3": {
+      "sha256": "e330ae90d5439320cb4e7c0badf811b0e9227784a3bbbafe327ec698a84cde2b",
+      "names": [
+        "Swamp Day / Swamp Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "13": {
+      "sha256": "4f7255ac43828cd1af6d574086abc6a9890a715be0d68fcb86564f94877e52f3",
+      "names": [
+        "Snowy Mountains Day / Snowy Mountains Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "22": {
+      "sha256": "c1e069e34af90c8a5cda40ad05e21c4afbca00185779deae4b1ba7464214ffd1",
+      "names": [
+        "Great Forest Day / Great Forest Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "28": {
+      "sha256": "fbbdb9ec657a40ee2b43623fdc3a35163faf48332ce09a5ffe2b3efecef3f480",
+      "names": [
+        "Gorge Day / Gorge Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "34": {
+      "sha256": "9e650d5e71003b9c471e645dd6cd55e7e23de770000b4023f119c22561d2458a",
+      "names": [
+        "Highlands Day / Highlands Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "35": {
+      "sha256": "58bfacb2b89d7c92f31245cb960e12ff2dd158a8bbbd7dc780afd228be8508a1",
+      "names": [
+        "Fortress Day / Fortress Night / Interceptor Base"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "40": {
+      "sha256": "5d9fd07718fe698a88575d0cc8004f025b6b9ad575d57664b7dc7a062e684bc9",
+      "names": [
+        "Polar Sea Day / Polar Sea Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "2": {
+      "sha256": "ffc8814ec972f0d3957eb3e6b521cf9700361b182044ccd7b98f20d494d3cab1",
+      "names": [
+        "Desert Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "18": {
+      "sha256": "d9b0e0d505b1a6cb2953b8352f944ee57332306c98437777f33933ce9d150356",
+      "names": [
+        "Desert Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "8": {
+      "sha256": "c096602f1819122b69f4dfd08ade8a950ea06c7128fee4d313233460a79bf4fa",
+      "names": [
+        "Castle Schrade"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "4": {
+      "sha256": "faf189cb6b34b9a01cd09083e1aea47e6f21065ae45c16149e96d81ff15e475b",
+      "names": [
+        "Volcano Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "19": {
+      "sha256": "94c80aa7f3f78c53a9096b958079ce47a43ad5113ffde2822750b60c9b68f138",
+      "names": [
+        "Volcano Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "23": {
+      "sha256": "88c7ecf7e448cf08c315a851de6012b9819e9013399b01f0a88b27b7b986d675",
+      "names": [
+        "Volcano 2 Day / Volcano - Extended - Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "24": {
+      "sha256": "2ac9b89a7fbc7fac4306f98de8c7186e578c4d8704e28f3b64dc5d75ac05ddc6",
+      "names": [
+        "Volcano 2 Night / Volcano - Extended - Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "44": {
+      "sha256": "6b8bb88635706789ae5f97b49f93727babf8e6e43245da417e1a996ffd2cdb90",
+      "names": [
+        "Flower Field"
+      ],
+      "review_state": "user_confirmed_visual",
+      "correction": "Supersedes an incorrect historical visual label; original extraction metadata is preserved.",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "49": {
+      "sha256": "d27f16ce9d53d70c96bdd7d1f2a0f5df7ae09464ad51da06e76e1c2043ca2937",
+      "names": [
+        "White Lake Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "correction": "Supersedes an incorrect historical visual label; original extraction metadata is preserved.",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "50": {
+      "sha256": "bec99bc6b12948f153cba28e7cab7a5f5568bee8d672b2af4edd6ad82fa2974a",
+      "names": [
+        "White Lake Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "correction": "Supersedes an incorrect historical visual label; original extraction metadata is preserved.",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "5": {
+      "sha256": "db57b9041b65961169e6d0d195a1ccd962a08f4e12ceea3c30e8ec5960eac81a",
+      "names": [
+        "Jungle Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "20": {
+      "sha256": "21c0aa2b14426b93cd2ced49332be6390b663696e8d6f869c8027a8ac54cae62",
+      "names": [
+        "Jungle Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "14": {
+      "sha256": "172304c8f9bc9ccb2ba413b47aaf94a8d2a4cababf25f248739b69795b92e990",
+      "names": [
+        "Town Siege Day / Town Siege night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "15": {
+      "sha256": "5039752240dbef1b89281f7d2552b667a19fad546b5630d3ee80a835bc14d6a2",
+      "names": [
+        "Tower 1 / Short Tower"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "16": {
+      "sha256": "5bb826bc9a0f83897587f5b6522ecbdc7d8534973345a7b72aa23750b9a638a7",
+      "names": [
+        "Tower 2 / Short Tower w/ Drop"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "17": {
+      "sha256": "9bcb66cb5b537a3c4e346461d38eb0ec21269aa785f1852da87f5f8b3e285402",
+      "names": [
+        "Tower 3 / Long Tower"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "33": {
+      "sha256": "f63b583713913b8771826beb39ab39c224296054436665057fd1bff43e4de474",
+      "names": [
+        "Tower with Nesthole"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "30": {
+      "sha256": "c562ec08625cd8ae1a7cf56cb7464756a6d69812677a37484d019fe4c5e91f51",
+      "names": [
+        "Solitude Isle 1 / Solitude Island Area 1 Map"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "31": {
+      "sha256": "867bb0d6d82bafde4400f59a28c1b505028c8a0b143bb52202cd73c612830e6e",
+      "names": [
+        "Solitude Isle 2 / Solitude Island Area 2 Map"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "32": {
+      "sha256": "9bd1d4e34733a48071217787bae6495714c8566f15ac4b330a27444d210dcd45",
+      "names": [
+        "Solitude Isle 3"
+      ],
+      "review_state": "candidate_review"
+    },
+    "43": {
+      "sha256": "b3d673a1a8bcfe89669c7974ab857ed286da7fce12fbb8338aaad3011fce4a38",
+      "names": [
+        "Tidal Island surface / underground views still required"
+      ],
+      "review_state": "user_confirmed_visual",
+      "correction": "Supersedes an incorrect historical visual label; original extraction metadata is preserved.",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "9": {
+      "sha256": "28a985a1305c73902a8241945c1c92f52b8a05095b478d3225ae0b63ab11ba67",
+      "names": [
+        "Crimson Battleground"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "26": {
+      "sha256": "ae2037d9d15a2360371cfe8c62ec5c29159ed9ef505b26cd1d3eaf4c22f24212",
+      "names": [
+        "Battlefield Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "27": {
+      "sha256": "bb170fd3ee78cde5edbfa751417876f97e4c910d8d49583725ea83696fb80297",
+      "names": [
+        "Top of Great Forest / Sacred Pinnacle"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "36": {
+      "sha256": "32bf763a0f517874d0595ce8a4e56dcbd9621bda8fbbd9fc69fccc6bd04d6107",
+      "names": [
+        "Arena with Moat Day / Arena with Moat Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "41": {
+      "sha256": "264a783b0a3d7f7d4bc8f8087d8d454dd7ac596f0667635e040cc9903446a071",
+      "names": [
+        "World's End"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "42": {
+      "sha256": "4626737d6bc382e44dbff7b48181de3c93a2c7dfdd6b2a320159297e69ceb6a1",
+      "names": [
+        "Large Airship"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "45": {
+      "sha256": "2eb831f3fb1afaf6e6e0c3367b740de335580bf9d17440da54a420642177791d",
+      "names": [
+        "Deep Crater"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "46": {
+      "sha256": "4d72f422811e1fc5cbc376717370927eb42a4de385c7663ed3b8b38a22b78039",
+      "names": [
+        "Bamboo Forest Day / Bamboo Forest Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "47": {
+      "sha256": "580cc32bc9d378c7452d47106d9d460e2e057f503462b2c3f8b636f5aee179fb",
+      "names": [
+        "Battlefield 2 Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "51": {
+      "sha256": "d432c4eb101d0453283574c2f492a82830287ed544542bd7a11e5e1eb64a901d",
+      "names": [
+        "Great Island"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "53": {
+      "sha256": "b4aabc988ce918dc304a2cc97ab1feea23abb118bac8252b15bb852973cc39f9",
+      "names": [
+        "Painted Falls Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "54": {
+      "sha256": "b4aabc988ce918dc304a2cc97ab1feea23abb118bac8252b15bb852973cc39f9",
+      "names": [
+        "Painted Falls Night"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "55": {
+      "sha256": "0ddca8bede7ddd30cb12480e47874eaa827e6e5f73ed1f213d7e09d48186f2f4",
+      "names": [
+        "Sanctuary"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "56": {
+      "sha256": "b9ffbb9fa667ff8ead290a9b2c21c7f5d9e3ca2107a6ac92079169dd882e56f8",
+      "names": [
+        "Sacred Pinnacle"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "58": {
+      "sha256": "d436639d414f85b2274e0a97df31a2da3d10efa090ed15e5a777fb1f5fb73a85",
+      "names": [
+        "Historic Site"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "6": {
+      "sha256": "e4fa94b4fde4463cd2b11150f136b7ec4ea5b914ccb10acbc55a1ee25d59bcbe",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "7": {
+      "sha256": "c179ab3480bc0c5e127e5ddcfca24a71a6a10919097859d219079277c9e2ac3f",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "10": {
+      "sha256": "5da7ee55e69b96b89dcbfea05272b9c698a94ad0505c2b09da8bf9e4ab4e9556",
+      "names": [
+        "Large Arena"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "11": {
+      "sha256": "6d73817ea862ff05895d735b3e87cd108408326d4332811da522aa2ae3df85c1",
+      "names": [
+        "Large Arena"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "12": {
+      "sha256": "9dd290fdf2e36d6feb83d05632894ff6ced1d5874485fcea53dde4139899a39e",
+      "names": [
+        "Small Arena"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+      "display_crop": [
+        0,
+        0,
+        256,
+        240
+      ]
+    },
+    "21": {
+      "sha256": "47803e7c3995fa8d181ff5bfadef2b429299441fb186a3da2ce4424d8e9a958e",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "25": {
+      "sha256": "e02b98a160b4f9055517259b6b0b054af90a02363dbd5fa482fff0dac3d0d55d",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "29": {
+      "sha256": "26c588e7f946846621f6a030530e90b49e0a726e4d5dcfa7186d8421ac818563",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "37": {
+      "sha256": "f4f5b0819d624fd1a3ce653351d2ff6fe0bc6991591293094e355b46082e0dea",
+      "names": [
+        "Tide Island Day"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "39": {
+      "sha256": "02fd3130a0174c8bb39f9b5a38e5e39647b0ec61f28fb9efd4b309b42b81db73",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "not_a_map",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "48": {
+      "sha256": "9c45a25c28f1ffea3a37ad8533dcb378dbf9a6c60ff8d2df6811a77160a932d9",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "52": {
+      "sha256": "a49904fc18494a8f889359495004442a907bb6e5cd60044b270c8175464b05e5",
+      "names": [
+        "Cloud Viewing Fortress"
+      ],
+      "review_state": "user_confirmed_visual",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    },
+    "57": {
+      "sha256": "26dbd3fb830dea9da6f3bf404c53efce0c75f85152ea05142338a569d3497360",
+      "names": [
+        "Da identificare"
+      ],
+      "review_state": "in_game_check_required",
+      "user_review_source": "User visual review JSON SHA256 cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca"
+    }
+  },
+  "identified_unassigned": [
+    {
+      "native_index": 10,
+      "name": "Large Arena",
+      "review_state": "user_confirmed_visual",
+      "notes": "Exact Ledge/Pillar/Day/Night catalog mapping was not selected."
+    },
+    {
+      "native_index": 12,
+      "name": "Small Arena",
+      "review_state": "user_confirmed_visual",
+      "notes": "Exact catalog ID remains to be established."
+    },
+    {
+      "native_index": 51,
+      "name": "Great Island",
+      "review_state": "user_confirmed_visual",
+      "notes": "Do not reuse the rejected Cloud Viewing Fortress/catalog91 association."
+    }
+  ],
+  "user_review_summary": {
+    "source_sha256": "cbe38bb7df4a15a240366e9b883c84708f959fc52f1ad2010f1d89a4b55a67ca",
+    "snapshot": "da7128b6616a6ccf9f86e49b87da8f9aab1305bf67dcbab522575047a1168b35",
+    "counts": {
+      "correct": 47,
+      "unsure": 9,
+      "pending": 2,
+      "not_map": 1
+    },
+    "crop_policy": "Honor explicit hide_icons flags only; retain rows0..239 and preserve source PNGs.",
+    "exact_map_ids_checked": [
+      "62"
+    ],
+    "note": "Name/family confirmation does not confirm every proposed Day/Night map ID."
+  }
+}

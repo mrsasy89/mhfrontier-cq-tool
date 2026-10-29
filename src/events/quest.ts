@@ -23,12 +23,13 @@ export const readQuest = async (path: string): Promise<QuestFile> => {
 
 export interface SaveQuestPayload {
   filepath: string;
+  original_filepath: string;
   quest: QuestFile;
 }
 
 export const saveQuest = async (data: SaveQuestPayload) => {
   const quest: QuestFile = prepareQuest(data.quest);
-  const payload: SaveQuestPayload = { filepath: data.filepath, quest };
+  const payload: SaveQuestPayload = { filepath: data.filepath, original_filepath: data.original_filepath, quest };
 
   await invokeEvent(
     'save_quest_file',

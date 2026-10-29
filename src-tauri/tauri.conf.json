@@ -1,23 +1,31 @@
 {
   "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
   "build": {
-    "beforeBuildCommand": "yarn build",
-    "beforeDevCommand": "yarn start",
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run start",
     "devPath": "http://localhost:3000",
     "distDir": "../dist"
   },
   "package": {
-    "productName": "MHFrontier CQ Editor",
-    "version": "1.5.2"
+    "productName": "MHFrontier CQ Editor - AI beta",
+    "version": "0.2.0"
   },
   "tauri": {
     "allowlist": {
       "fs": {
         "all": true,
-        "scope": ["**"]
+        "scope": [
+          "**"
+        ]
       },
       "dialog": {
         "all": true
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": [
+          "**"
+        ]
       }
     },
     "bundle": {
@@ -35,7 +43,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "www.mhfrontier-cq-tool.com",
+      "identifier": "io.github.mrsasy89.mhfz-ai-quest-builder",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -45,7 +53,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "AI quest authoring with the CQ editor interface",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
@@ -63,7 +71,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Quest Editor",
+        "title": "MHFZ AI Quest Builder - CQ Editor",
         "height": 720,
         "width": 1280,
         "minHeight": 600,

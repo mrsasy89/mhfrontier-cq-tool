@@ -1,5 +1,5 @@
 {
-  "name": "desktop",
+  "name": "mhfrontier-cq-tool",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,11 @@
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint>fix": "eslint --fix \"**/*.{ts,tsx}\"",
     "check-types": "tsc --noEmit",
+    "test:asset-runtime": "node --test tests/asset-runtime.cjs",
     "check-rust": "cd src-tauri && cargo fmt --all --check"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.2.0",
+    "@tauri-apps/api": "1.2.0",
     "classnames": "^2.3.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

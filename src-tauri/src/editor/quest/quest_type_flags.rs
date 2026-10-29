@@ -42,10 +42,7 @@ pub struct MainQuestProp {
     pub skip1: u8,
     pub quest_fee: u32,
     pub reward_main: u32,
-    pub max_death: u8,
-    pub unk9: u8,
-    pub unk10: u8,
-    pub unk11: u8,
+    pub max_death: u32, // CartsOrRewardReduction: rank-dependent, preserve all four bytes.
     pub reward_a: u16,
     pub skip2: [u8; 2],
     pub reward_b: u16,
@@ -64,6 +61,29 @@ pub struct MainQuestProp {
     pub post_rank_max: u16,
     pub unk12: u8,
     pub unk13: u8,
+}
+
+#[cfg(test)]
+mod failure_field_tests {
+    use super::*;
+
+    #[test]
+    fn hr_reward_reduction_reads_all_four_bytes_without_shifting_rewards() {
+        let mut bytes = vec![0u8; 256];
+        bytes[16..20].copy_from_slice(&22500u32.to_le_bytes());
+        bytes[20..24].copy_from_slice(&7500u32.to_le_bytes());
+        bytes[24..26].copy_from_slice(&1234u16.to_le_bytes());
+        let mut reader = better_cursor::from_buffer(bytes);
+        let values = reader.read_struct::<MainQuestProp>().unwrap();
+        assert_eq!(values.reward_main, 22500);
+        assert_eq!(values.max_death, 7500);
+        assert_eq!(values.reward_a, 1234);
+        let mut writer = better_cursor::from_buffer(vec![]);
+        writer.write_struct(&values).unwrap();
+        let saved = writer.get_buffer().unwrap();
+        assert_eq!(&saved[20..24], &7500u32.to_le_bytes());
+        assert_eq!(&saved[24..26], &1234u16.to_le_bytes());
+    }
 }
 
 #[derive(StructRead, StructWrite, Serialize, Deserialize, Debug, PartialEq)]

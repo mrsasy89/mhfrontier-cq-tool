@@ -55,10 +55,14 @@ export function QuestEditorProvider({
     if (!questPath || !data) return;
 
     try {
+      const destination = await save({ title: "Save laboratory copy inside the builder workspace", defaultPath: questPath });
+      if (!destination) return;
       await events.quest.saveQuest({
-        filepath: questPath,
+        filepath: destination as string,
+        original_filepath: questPath,
         quest: data
       });
+      setQuestPath(destination as string);
 
       toast.success('Successfully saved quest file!');
     } catch(err) {
@@ -124,6 +128,7 @@ export function QuestEditorProvider({
     try {
       await events.quest.saveQuest({
         filepath: questPath,
+        original_filepath: questPath,
         quest: data
       });
 

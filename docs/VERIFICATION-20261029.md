@@ -1,0 +1,12 @@
+# Verification - 2026-10-29
+
+- Python engine: 125 tests passed in both the standalone snapshot and the root-layout CQ integration branch.
+- CQ parity: passed, pinned revision 1176c07ede6770117684f2643efd3315a940872b; 160 unchanged inherited files and 17 reviewed integration exceptions.
+- Frontend: TypeScript, scoped AI-page ESLint, asset-runtime regression and Vite production build passed in the CQ root layout.
+- Native: locked Windows release build passed using the existing compatible toolchain. Independent CQ parser read-back passed for the explicit custom-spawn/custom-reward laboratory export. The targeted full-u32 failure-field regression also passed.
+- Real Codex: interpreted the Desert two-boss request, requested one further host research round, compiled and exported a laboratory BIN. It preserved the selected native map package and used corpus terrain positions. A later complete-corpus comparison tightened Slay_All quantity to the observed native profile 1; a separate explicit local regression tested that correction and changed Main/Sub reward tables. The user's original stopped session remains unchanged.
+- Initial failures resolved: the old manual-position test was replaced because custom requests now reach the planner; the plan confidence regression was adapted to explicit research fields; the first live plan exposed an uncited supported claim, adding bounded plan validation feedback; the first native read-back ran before its manifest existed and passed after export. Launcher CRCRLF whitespace was corrected before staging.
+- Existing warnings: native unused imports inherited from the pinned CQ source; Vite dependency directive, outdated Browserslist metadata and large bundle warnings. Unrelated CQ source was kept aligned with the baseline.
+- Skipped: Python coverage, pyright and ruff (not installed); global inherited-CQ lint; the 13 original native fixture-based tests (local fixture files unavailable). No numerical coverage claim and no complete-ECC claim is made.
+- Pending: interactive GUI retest after migration, clean-machine setup, client loading, simultaneous spawning/combat, migration, HC behavior, completion and rewards. No gameplay, installation, database access, SQL execution or server restart was performed.
+- Data review: only source, metadata, documentation and synthetic tests are included. BINs, executables, corpus, private session/provider output, credentials and local configuration remain excluded.

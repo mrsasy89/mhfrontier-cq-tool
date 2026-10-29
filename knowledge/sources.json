@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "provided_by": "User",
+  "recorded_date": "2026-10-28",
+  "verification": "Research leads supplied by the user, not a content audit. Verify relevant files and revisions before relying on them.",
+  "game": [
+    "https://github.com/Mezeporta/Erupe",
+    "https://github.com/mrsasy89/Erupe",
+    "https://github.com/Mezeporta/010Templates",
+    "https://github.com/Mezeporta/Servers",
+    "https://github.com/Mezeporta/mhfrc",
+    "https://github.com/Mezeporta/RegisterServer",
+    "https://github.com/Mezeporta/MHFZManual",
+    "https://github.com/var-username/Monster-Hunter-Frontier-Patterns",
+    "https://github.com/mhvuze/ReFrontier",
+    "https://github.com/rockisch/mhf-iel",
+    "https://github.com/LilButter/Mezeporta",
+    "https://github.com/mrsasy89/Mezeporta-SteamOS",
+    "https://github.com/LilButter/Mezeporta-Wrapper",
+    "https://github.com/Invasor-de-Fronteiras/mhfrontier-cq-tool",
+    "https://github.com/Chakratos/mhf-save-manager",
+    "https://github.com/AsteriskAmpersand/Monster-Hunter-Frontier-Importer",
+    "https://github.com/Yuvi-App/MHF-QuestEditor",
+    "https://github.com/Paxlord/Pax-Mhfz-Loader",
+    "https://github.com/Paxlord/frontier-ai-doc-dump",
+    "https://github.com/Paxlord/mhfz-blender-plugin",
+    "https://github.com/Paxlord/Rsfrontier",
+    "https://github.com/Paxlord/mhfz-tree-viewer-site",
+    "https://github.com/Paxlord/mhfz-collision-viewer",
+    "https://github.com/Paxlord/frontier-tools",
+    "https://github.com/Paxlord/paxloader-basemod",
+    "https://github.com/Paxlord/Pax-MHFZ-Mod-Repository",
+    "https://github.com/Paxlord/Pax-MHFZ-Data-Collection",
+    "https://github.com/Relial/ironrunner_v2",
+    "https://github.com/Relial/IronRunner",
+    "https://github.com/Relial/mhfz-sigil-sniper",
+    "https://github.com/Relial/mhfz-monster-viewer",
+    "https://github.com/Relial/bunny-manager",
+    "https://github.com/Relial/damage-numbers",
+    "https://github.com/Relial/cardamom-loader",
+    "https://github.com/Relial/box-swap",
+    "https://github.com/Relial/bunny-plugin",
+    "https://github.com/Relial/font-tweaks",
+    "https://github.com/Relial/g32-g-weapon-previews",
+    "https://github.com/Relial/mhfz-structs",
+    "https://github.com/Relial/bunny-components",
+    "https://github.com/Relial/hitbox-viewer",
+    "https://github.com/Relial/better-buffs",
+    "https://github.com/Relial/iframe-viewer",
+    "https://github.com/Relial/true-raw",
+    "https://github.com/Relial/mhfz-camera-tools",
+    "https://github.com/Relial/mhfz-blinking",
+    "https://github.com/Relial/mhfz_speedrun_utilities"
+  ],
+  "tools": [
+    "https://github.com/affaan-m/ECC",
+    "https://github.com/morluto/rea"
+  ],
+  "visual_comparisons": [
+    {
+      "url": "https://gamefaqs.gamespot.com/psp/943356-monster-hunter-freedom-unite/faqs/78652/tower",
+      "game": "Monster Hunter Freedom Unite (PSP)",
+      "role": "Secondary visual comparison only, explicitly suggested by the user",
+      "limitations": "Similar to Frontier but not identical. Never transfer area numbering, transitions or variants without Frontier evidence."
+    }
+  ],
+  "frontier_websites": [
+    {
+      "url": "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/",
+      "role": "User-supplied Frontier reference; verify relevant page contents and version before relying on it"
+    },
+    {
+      "url": "https://mh.fist.moe",
+      "role": "User-supplied Frontier reference; verify relevant page contents and version before relying on it"
+    },
+    {
+      "url": "https://themaelstro.github.io/index.html",
+      "role": "User-supplied Frontier reference; verify relevant page contents and version before relying on it"
+    },
+    {
+      "url": "http://ferias.life.coocan.jp/",
+      "role": "User-supplied Frontier reference; verify relevant page contents and version before relying on it"
+    }
+  ],
+  "frontier_map_references": [
+    {
+      "url": "https://monsterhunter.fandom.com/wiki/Category:Locations",
+      "role": "User-provided cross-reference; only pages/variants explicitly appearing in MHF/MHF-Z/MHF-ZZ may be used"
+    },
+    {
+      "url": "https://monsterhunter.fandom.com/wiki/Category:Frontier_Exclusive_Areas",
+      "role": "Frontier-only discovery index; check each individual page and image version"
+    },
+    {
+      "url": "https://xl3lackout.github.io/MHFZ-Ferias-English-Project/saisyu/sugo.htm",
+      "role": "Frontier overview links by location; compare with native client assets and quest records"
+    }
+  ]
+}

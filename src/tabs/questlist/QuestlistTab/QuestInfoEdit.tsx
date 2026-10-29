@@ -62,7 +62,7 @@ export function QuestInfoEdit({ questIndex, onClose }: QuestInfoEditProps) {
                 control={form.control}
             />
             <InputField
-                label="Max Deaths"
+                label="Carts / Reward Reduction (raw u32)"
                 type="number"
                 name={`quests.${questIndex}.quest_type_flags.main_quest_prop.max_death`}
                 control={form.control}

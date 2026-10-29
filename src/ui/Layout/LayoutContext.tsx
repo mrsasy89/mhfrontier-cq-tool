@@ -2,6 +2,7 @@ import * as React from "react";
 import { createContext, useState } from "react";
 import { useContext } from "react";
 import { useQuestEditor } from "../../context/QuestEditorContext";
+import { useTool } from "../../context/ToolContext";
 
 export interface LayoutContextState {
   isOpen: boolean;
@@ -17,14 +18,16 @@ export const useLayout = () => {
 export function LayoutProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(true);
   const { form, handleSaveQuest } = useQuestEditor();
+  const { tool } = useTool();
+  const Shell = tool === "QuestEditor" ? "form" : "div";
 
   return (
     <context.Provider value={{ isOpen, onToggle: () => setIsOpen(!isOpen) }}>
-      <form
+      <Shell
         className="w-full h-full flex flex-row dark:bg-[#282a36] dark:text-zinc-400"
-        onSubmit={form.handleSubmit((data) => {
+        onSubmit={tool === "QuestEditor" ? form.handleSubmit((data) => {
           handleSaveQuest(data);
-        })}
+        }) : undefined}
       >
         {isOpen && (
           <div
@@ -34,7 +37,7 @@ export function LayoutProvider({ children }: { children: React.ReactNode }) {
         )}
 
         {children}
-      </form>
+      </Shell>
     </context.Provider>
   );
 }

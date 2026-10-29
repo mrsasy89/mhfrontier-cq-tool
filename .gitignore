@@ -60,3 +60,34 @@ target
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# AI integration private data
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.workspace/
+quest-builder.local.json
+*.local.json
+.env
+.env.*
+corpus/quests/*
+!corpus/quests/.gitkeep
+*.exe
+*.dll
+*.pdb
+*.bin
+*.log
+
+# Optional CQ desktop build caches and local settings
+**/node_modules/
+**/target/
+desktop/dist/
+desktop/.env.local
+desktop/config.json
+desktop/resources/
+
+# User-supplied external toolchain (including companion configuration files)
+/ReFrontier/

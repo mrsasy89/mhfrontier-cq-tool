@@ -23,7 +23,7 @@ export function QuestInfoTab() {
           control={form.control}
         />
         <InputField
-          label="Max Deaths"
+          label="Carts / Reward Reduction (raw u32)"
           type="number"
           name="quest_type_flags.main_quest_prop.max_death"
           control={form.control}

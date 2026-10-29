@@ -1,3 +1,4 @@
+import { BsStars } from "react-icons/bs";
 import { useEffect, useMemo } from "react";
 import { createContext } from "react";
 import { useContext } from "react";
@@ -18,6 +19,10 @@ export function MenuProvider({ children }: { children: React.ReactNode }) {
   const nav = useNavigate();
 
   const menu: Menu | null = useMemo(() => {
+    if (tool === 'AIQuestBuilder') {
+      return { defaultPath: '/ai', groups: [{ name: 'AI authoring', items: [{ name: 'Create / Quest Fix / Settings', icon: BsStars, uri: '/ai' }] }] };
+    }
+
     if (tool === 'QuestEditor') {
       return questMenu;
     }

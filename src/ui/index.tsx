@@ -1,4 +1,5 @@
 import React from "react";
+import { AIQuestBuilder } from "../tabs/AIQuestBuilder";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./Layout/Layout";
 import { MapPositionTab } from "../tabs/develop/MapPosition";
@@ -24,7 +25,8 @@ export function Ui() {
   return (
     <Routes>
       <Route element={<MenuProvider><Layout /></MenuProvider>}>
-        <Route path="/" element={<Navigate to="/" replace />} />
+        <Route path="/" element={<Navigate to="/ai" replace />} />
+        <Route path="/ai" element={<AIQuestBuilder />} />
         <Route path="/quest" element={<LoadQuestTab />} />
         <Route path="/quest/monsters" element={<MonstersTab />} />
         <Route path="/quest/small-monsters" element={<SmallMonsterTab />} />

@@ -1,0 +1,2281 @@
+{
+  "source": "https://github.com/mrsasy89/mhfrontier-cq-tool (monster IDs and map/stage labels only)",
+  "monsters": {
+    "0": "None",
+    "1": "Rathian",
+    "2": "Fatalis",
+    "3": "Kelbi",
+    "4": "Mosswine",
+    "5": "Bullfango",
+    "6": "Yian Kut-Ku",
+    "7": "Lao-Shan Lung",
+    "8": "Cephadrome",
+    "9": "Felyne",
+    "10": "Veggie Elder",
+    "11": "Rathalos",
+    "12": "Aptonoth",
+    "13": "Genprey",
+    "14": "Diablos",
+    "15": "Khezu",
+    "16": "Velociprey",
+    "17": "Gravios",
+    "18": "Felyne?",
+    "19": "Vespoid",
+    "20": "Gypceros",
+    "21": "Plesioth",
+    "22": "Basarios",
+    "23": "Melynx",
+    "24": "Hornetaur",
+    "25": "Apceros",
+    "26": "Monoblos",
+    "27": "Velocidrome",
+    "28": "Gendrome",
+    "29": "Rocks",
+    "30": "Ioprey",
+    "31": "Iodrome",
+    "32": "Pugis",
+    "33": "Kirin",
+    "34": "Cephalos",
+    "35": "Giaprey / Giadrome",
+    "36": "Crimson Fatalis",
+    "37": "Pink Rathian",
+    "38": "Blue Yian Kut-Ku",
+    "39": "Purple Gypceros",
+    "40": "Yian Garuga",
+    "41": "Silver Rathalos",
+    "42": "Gold Rathian",
+    "43": "Black Diablos",
+    "44": "White Monoblos",
+    "45": "Red Khezu",
+    "46": "Green Plesioth",
+    "47": "Black Gravios",
+    "48": "Daimyo Hermitaur",
+    "49": "Azure Rathalos",
+    "50": "Ashen Lao-Shan Lung",
+    "51": "Blangonga",
+    "52": "Congalala",
+    "53": "Rajang",
+    "54": "Kushala Daora",
+    "55": "Shen Gaoren",
+    "56": "Great Thunderbug",
+    "57": "Shakalaka",
+    "58": "Yama Tsukami",
+    "59": "Chameleos",
+    "60": "Rusted Kushala Daora",
+    "61": "Blango",
+    "62": "Conga",
+    "63": "Remobra",
+    "64": "Lunastra",
+    "65": "Teostra",
+    "66": "Hermitaur",
+    "67": "Shogun Ceanataur",
+    "68": "Bulldrome",
+    "69": "Anteka",
+    "70": "Popo",
+    "71": "White Fatalis",
+    "72": "Yama Tsukami",
+    "73": "Ceanataur",
+    "74": "Hypnocatrice",
+    "75": "Lavasioth",
+    "76": "Tigrex",
+    "77": "Akantor",
+    "78": "Bright Hypnoc",
+    "79": "Lavasioth Subspecies",
+    "80": "Espinas",
+    "81": "Orange Espinas",
+    "82": "White Hypnoc",
+    "83": "Akura Vashimu",
+    "84": "Akura Jebia",
+    "85": "Berukyurosu",
+    "86": "Cactus",
+    "87": "Gorge Objects",
+    "88": "Gorge Rocks",
+    "89": "Pariapuria",
+    "90": "White Espinas",
+    "91": "Kamu Orugaron",
+    "92": "Nono Orugaron",
+    "93": "Raviente",
+    "94": "Dyuragaua",
+    "95": "Doragyurosu",
+    "96": "Gurenzeburu",
+    "97": "Burukku",
+    "98": "Erupe",
+    "99": "Rukodiora",
+    "100": "Unknown",
+    "101": "Gogomoa",
+    "102": "Kokomoa",
+    "103": "Taikun Zamuza",
+    "104": "Abiorugu",
+    "105": "Kuarusepusu",
+    "106": "Odibatorasu",
+    "107": "Disufiroa",
+    "108": "Rebidiora",
+    "109": "Anorupatisu",
+    "110": "Hyujikiki",
+    "111": "Midogaron",
+    "112": "Giaorugu",
+    "113": "Mi Ru",
+    "114": "Farunokku",
+    "115": "Pokaradon",
+    "116": "Shantien",
+    "117": "Pokara",
+    "118": "Dummy",
+    "119": "Goruganosu",
+    "120": "Aruganosu",
+    "121": "Baruragaru",
+    "122": "Zerureusu",
+    "123": "Gougarf",
+    "124": "Uruki",
+    "125": "Forokururu",
+    "126": "Meraginasu",
+    "127": "Diorekkusu",
+    "128": "Garuba Daora",
+    "129": "Inagami",
+    "130": "Varusaburosu",
+    "131": "Poborubarumu",
+    "132": "Duremudira",
+    "133": "UNK",
+    "134": "Felyne",
+    "135": "Blue NPC",
+    "136": "UNK",
+    "137": "Cactus",
+    "138": "Veggie Elders",
+    "139": "Gureadomosu",
+    "140": "Harudomerugu",
+    "141": "Toridcless",
+    "142": "Gasurabazura",
+    "143": "Kusubami",
+    "144": "Yama Kurai",
+    "145": "Dure 3rd Phase",
+    "146": "Zinogre",
+    "147": "Deviljho",
+    "148": "Brachydios",
+    "149": "Berserk Laviente",
+    "150": "Toa Tesukatora",
+    "151": "Barioth",
+    "152": "Uragaan",
+    "153": "Stygian Zinogre",
+    "154": "Guanzorumu",
+    "155": "Deviljho",
+    "156": "UNK",
+    "157": "Egyurasu",
+    "158": "Voljang",
+    "159": "Nargacuga",
+    "160": "Keoaruboru",
+    "161": "Zenaserisu",
+    "162": "Gore Magala",
+    "163": "Blinking Nargacuga",
+    "164": "Shagaru Magala",
+    "165": "Amatsu",
+    "166": "Eruzerion",
+    "167": "Musou Dure",
+    "168": "Rocks",
+    "169": "Seregios",
+    "170": "Bogabadorumu",
+    "171": "Unknown Blue Barrel",
+    "172": "Musou Bogabadorumu",
+    "173": "Costumed Uruki",
+    "174": "Musou Zerureusu",
+    "175": "PSO2 Rappy",
+    "176": "King Shakalaka"
+  },
+  "maps": {
+    "1": {
+      "name": "Siege Fortress Day",
+      "stages": [
+        {
+          "id": 10,
+          "area": "Base"
+        },
+        {
+          "id": 14,
+          "area": "Area 1"
+        },
+        {
+          "id": 30,
+          "area": "Area 2"
+        },
+        {
+          "id": 28,
+          "area": "Area 3"
+        },
+        {
+          "id": 11,
+          "area": "Area 4"
+        },
+        {
+          "id": 12,
+          "area": "Area 5"
+        },
+        {
+          "id": 31,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "2": {
+      "name": "Forest and Hills Day",
+      "stages": [
+        {
+          "id": 21,
+          "area": "Base"
+        },
+        {
+          "id": 39,
+          "area": "Area 1"
+        },
+        {
+          "id": 38,
+          "area": "Area 2"
+        },
+        {
+          "id": 33,
+          "area": "Area 3"
+        },
+        {
+          "id": 37,
+          "area": "Area 4"
+        },
+        {
+          "id": 40,
+          "area": "Area 5"
+        },
+        {
+          "id": 32,
+          "area": "Area 6"
+        },
+        {
+          "id": 41,
+          "area": "Area 7"
+        },
+        {
+          "id": 35,
+          "area": "Area 8"
+        },
+        {
+          "id": 36,
+          "area": "Area 9"
+        },
+        {
+          "id": 34,
+          "area": "Area 10"
+        },
+        {
+          "id": 42,
+          "area": "Area 11"
+        },
+        {
+          "id": 43,
+          "area": "Area 12"
+        }
+      ]
+    },
+    "3": {
+      "name": "Desert Day",
+      "stages": [
+        {
+          "id": 140,
+          "area": "Base"
+        },
+        {
+          "id": 146,
+          "area": "Area 1"
+        },
+        {
+          "id": 141,
+          "area": "Area 2"
+        },
+        {
+          "id": 143,
+          "area": "Area 3"
+        },
+        {
+          "id": 147,
+          "area": "Area 4"
+        },
+        {
+          "id": 145,
+          "area": "Area 5"
+        },
+        {
+          "id": 144,
+          "area": "Area 6"
+        },
+        {
+          "id": 142,
+          "area": "Area 7"
+        },
+        {
+          "id": 148,
+          "area": "Area 8"
+        },
+        {
+          "id": 149,
+          "area": "Area 9"
+        },
+        {
+          "id": 150,
+          "area": "Area 10"
+        },
+        {
+          "id": 7,
+          "area": "Secret"
+        }
+      ]
+    },
+    "4": {
+      "name": "Swamp Day",
+      "stages": [
+        {
+          "id": 151,
+          "area": "Base"
+        },
+        {
+          "id": 152,
+          "area": "Area 1"
+        },
+        {
+          "id": 153,
+          "area": "Area 2"
+        },
+        {
+          "id": 154,
+          "area": "Area 3"
+        },
+        {
+          "id": 160,
+          "area": "Area 4"
+        },
+        {
+          "id": 158,
+          "area": "Area 5"
+        },
+        {
+          "id": 157,
+          "area": "Area 6"
+        },
+        {
+          "id": 159,
+          "area": "Area 7"
+        },
+        {
+          "id": 156,
+          "area": "Area 8"
+        },
+        {
+          "id": 155,
+          "area": "Area 9"
+        },
+        {
+          "id": 9,
+          "area": "Secret"
+        }
+      ]
+    },
+    "5": {
+      "name": "Volcano Day",
+      "stages": [
+        {
+          "id": 161,
+          "area": "Base"
+        },
+        {
+          "id": 164,
+          "area": "Area 1"
+        },
+        {
+          "id": 165,
+          "area": "Area 2"
+        },
+        {
+          "id": 166,
+          "area": "Area 3"
+        },
+        {
+          "id": 162,
+          "area": "Area 4"
+        },
+        {
+          "id": 163,
+          "area": "Area 5"
+        },
+        {
+          "id": 168,
+          "area": "Area 6"
+        },
+        {
+          "id": 167,
+          "area": "Area 7"
+        },
+        {
+          "id": 169,
+          "area": "Area 8"
+        },
+        {
+          "id": 74,
+          "area": "Secret"
+        }
+      ]
+    },
+    "6": {
+      "name": "Jungle Day",
+      "stages": [
+        {
+          "id": 111,
+          "area": "Area 1"
+        },
+        {
+          "id": 112,
+          "area": "Area 2"
+        },
+        {
+          "id": 113,
+          "area": "Area 3"
+        },
+        {
+          "id": 114,
+          "area": "Area 4"
+        },
+        {
+          "id": 115,
+          "area": "Area 5"
+        },
+        {
+          "id": 119,
+          "area": "Area 6"
+        },
+        {
+          "id": 116,
+          "area": "Area 9"
+        },
+        {
+          "id": 120,
+          "area": "Area 10"
+        }
+      ]
+    },
+    "7": {
+      "name": "Castle Schrade",
+      "stages": [
+        {
+          "id": 20,
+          "area": "Base"
+        },
+        {
+          "id": 25,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "8": {
+      "name": "Crimson Battleground",
+      "stages": [
+        {
+          "id": 8,
+          "area": "Base"
+        },
+        {
+          "id": 88,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "9": {
+      "name": "Arena with Ledge Day",
+      "stages": [
+        {
+          "id": 89,
+          "area": "Base"
+        },
+        {
+          "id": 90,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "10": {
+      "name": "Arena with Pillar Day",
+      "stages": [
+        {
+          "id": 89,
+          "area": "Base"
+        },
+        {
+          "id": 91,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "11": {
+      "name": "Snowy Mountains Day",
+      "stages": [
+        {
+          "id": 98,
+          "area": "Base"
+        },
+        {
+          "id": 99,
+          "area": "Area 1"
+        },
+        {
+          "id": 95,
+          "area": "Area 2"
+        },
+        {
+          "id": 94,
+          "area": "Area 3"
+        },
+        {
+          "id": 92,
+          "area": "Area 4"
+        },
+        {
+          "id": 93,
+          "area": "Area 5"
+        },
+        {
+          "id": 100,
+          "area": "Area 6"
+        },
+        {
+          "id": 96,
+          "area": "Area 7"
+        },
+        {
+          "id": 97,
+          "area": "Area 8"
+        },
+        {
+          "id": 6,
+          "area": "Secret"
+        }
+      ]
+    },
+    "12": {
+      "name": "Town Siege Day",
+      "stages": [
+        {
+          "id": 179,
+          "area": "Base"
+        },
+        {
+          "id": 176,
+          "area": "Area 1"
+        },
+        {
+          "id": 177,
+          "area": "Area 2"
+        },
+        {
+          "id": 178,
+          "area": "Area 3"
+        }
+      ]
+    },
+    "13": {
+      "name": "Tower 1",
+      "stages": [
+        {
+          "id": 121,
+          "area": "Base"
+        },
+        {
+          "id": 122,
+          "area": "Area 1"
+        },
+        {
+          "id": 123,
+          "area": "Area 2"
+        },
+        {
+          "id": 130,
+          "area": "Area 3"
+        },
+        {
+          "id": 128,
+          "area": "Area 4"
+        },
+        {
+          "id": 129,
+          "area": "Area 5"
+        },
+        {
+          "id": 127,
+          "area": "Area 6"
+        },
+        {
+          "id": 125,
+          "area": "Area 7"
+        },
+        {
+          "id": 126,
+          "area": "Area 8"
+        }
+      ]
+    },
+    "14": {
+      "name": "Tower 2",
+      "stages": [
+        {
+          "id": 121,
+          "area": "Base"
+        },
+        {
+          "id": 122,
+          "area": "Area 1"
+        },
+        {
+          "id": 123,
+          "area": "Area 2"
+        },
+        {
+          "id": 130,
+          "area": "Area 3"
+        },
+        {
+          "id": 128,
+          "area": "Area 4"
+        },
+        {
+          "id": 129,
+          "area": "Area 5"
+        },
+        {
+          "id": 127,
+          "area": "Area 6"
+        },
+        {
+          "id": 125,
+          "area": "Area 7"
+        },
+        {
+          "id": 126,
+          "area": "Area 8"
+        },
+        {
+          "id": 138,
+          "area": "Secret"
+        }
+      ]
+    },
+    "15": {
+      "name": "Tower 3",
+      "stages": [
+        {
+          "id": 121,
+          "area": "Base"
+        },
+        {
+          "id": 122,
+          "area": "Area 1"
+        },
+        {
+          "id": 123,
+          "area": "Area 2"
+        },
+        {
+          "id": 130,
+          "area": "Area 3"
+        },
+        {
+          "id": 129,
+          "area": "Area 4"
+        },
+        {
+          "id": 128,
+          "area": "Area 5"
+        },
+        {
+          "id": 125,
+          "area": "Area 6"
+        },
+        {
+          "id": 127,
+          "area": "Area 7"
+        },
+        {
+          "id": 83,
+          "area": "Area 8"
+        },
+        {
+          "id": 84,
+          "area": "Area 9"
+        },
+        {
+          "id": 124,
+          "area": "Area 10"
+        }
+      ]
+    },
+    "16": {
+      "name": "Forest and Hills Night",
+      "stages": [
+        {
+          "id": 184,
+          "area": "Base"
+        },
+        {
+          "id": 192,
+          "area": "Area 1"
+        },
+        {
+          "id": 191,
+          "area": "Area 2"
+        },
+        {
+          "id": 186,
+          "area": "Area 3"
+        },
+        {
+          "id": 190,
+          "area": "Area 4"
+        },
+        {
+          "id": 193,
+          "area": "Area 5"
+        },
+        {
+          "id": 185,
+          "area": "Area 6"
+        },
+        {
+          "id": 194,
+          "area": "Area 7"
+        },
+        {
+          "id": 188,
+          "area": "Area 8"
+        },
+        {
+          "id": 189,
+          "area": "Area 9"
+        },
+        {
+          "id": 187,
+          "area": "Area 10"
+        },
+        {
+          "id": 195,
+          "area": "Area 11"
+        },
+        {
+          "id": 196,
+          "area": "Area 12"
+        }
+      ]
+    },
+    "17": {
+      "name": "Desert Night",
+      "stages": [
+        {
+          "id": 45,
+          "area": "Base"
+        },
+        {
+          "id": 52,
+          "area": "Area 1"
+        },
+        {
+          "id": 47,
+          "area": "Area 2"
+        },
+        {
+          "id": 49,
+          "area": "Area 3"
+        },
+        {
+          "id": 53,
+          "area": "Area 4"
+        },
+        {
+          "id": 51,
+          "area": "Area 5"
+        },
+        {
+          "id": 50,
+          "area": "Area 6"
+        },
+        {
+          "id": 48,
+          "area": "Area 7"
+        },
+        {
+          "id": 54,
+          "area": "Area 8"
+        },
+        {
+          "id": 55,
+          "area": "Area 9"
+        },
+        {
+          "id": 56,
+          "area": "Area 10"
+        },
+        {
+          "id": 24,
+          "area": "Secret"
+        }
+      ]
+    },
+    "18": {
+      "name": "Swamp Night",
+      "stages": [
+        {
+          "id": 16,
+          "area": "Base"
+        },
+        {
+          "id": 44,
+          "area": "Area 1"
+        },
+        {
+          "id": 67,
+          "area": "Area 2"
+        },
+        {
+          "id": 68,
+          "area": "Area 3"
+        },
+        {
+          "id": 75,
+          "area": "Area 4"
+        },
+        {
+          "id": 72,
+          "area": "Area 5"
+        },
+        {
+          "id": 71,
+          "area": "Area 6"
+        },
+        {
+          "id": 73,
+          "area": "Area 7"
+        },
+        {
+          "id": 70,
+          "area": "Area 8"
+        },
+        {
+          "id": 69,
+          "area": "Area 9"
+        },
+        {
+          "id": 29,
+          "area": "Secret"
+        }
+      ]
+    },
+    "19": {
+      "name": "Volcano Night",
+      "stages": [
+        {
+          "id": 58,
+          "area": "Base"
+        },
+        {
+          "id": 61,
+          "area": "Area 1"
+        },
+        {
+          "id": 62,
+          "area": "Area 2"
+        },
+        {
+          "id": 63,
+          "area": "Area 3"
+        },
+        {
+          "id": 59,
+          "area": "Area 4"
+        },
+        {
+          "id": 60,
+          "area": "Area 5"
+        },
+        {
+          "id": 65,
+          "area": "Area 6"
+        },
+        {
+          "id": 64,
+          "area": "Area 7"
+        },
+        {
+          "id": 27,
+          "area": "Secret"
+        }
+      ]
+    },
+    "20": {
+      "name": "Jungle Night",
+      "stages": [
+        {
+          "id": 1,
+          "area": "Base"
+        },
+        {
+          "id": 2,
+          "area": "Area 1"
+        },
+        {
+          "id": 3,
+          "area": "Area 2"
+        },
+        {
+          "id": 4,
+          "area": "Area 3"
+        },
+        {
+          "id": 5,
+          "area": "Area 4"
+        },
+        {
+          "id": 18,
+          "area": "Area 5"
+        },
+        {
+          "id": 26,
+          "area": "Area 6"
+        },
+        {
+          "id": 23,
+          "area": "Area 7"
+        },
+        {
+          "id": 22,
+          "area": "Area 8"
+        },
+        {
+          "id": 19,
+          "area": "Area 9"
+        }
+      ]
+    },
+    "21": {
+      "name": "Snowy Mountains Night",
+      "stages": [
+        {
+          "id": 107,
+          "area": "Base"
+        },
+        {
+          "id": 108,
+          "area": "Area 1"
+        },
+        {
+          "id": 104,
+          "area": "Area 2"
+        },
+        {
+          "id": 103,
+          "area": "Area 3"
+        },
+        {
+          "id": 101,
+          "area": "Area 4"
+        },
+        {
+          "id": 102,
+          "area": "Area 5"
+        },
+        {
+          "id": 105,
+          "area": "Area 7"
+        },
+        {
+          "id": 106,
+          "area": "Area 8"
+        },
+        {
+          "id": 15,
+          "area": "Secret"
+        }
+      ]
+    },
+    "22": {
+      "name": "Town Siege night",
+      "stages": [
+        {
+          "id": 183,
+          "area": "Base"
+        }
+      ]
+    },
+    "23": {
+      "name": "Siege Fortress Night",
+      "stages": [
+        {
+          "id": 79,
+          "area": "Base"
+        },
+        {
+          "id": 14,
+          "area": "Area 1"
+        },
+        {
+          "id": 30,
+          "area": "Area 2"
+        },
+        {
+          "id": 28,
+          "area": "Area 3"
+        },
+        {
+          "id": 11,
+          "area": "Area 4"
+        },
+        {
+          "id": 12,
+          "area": "Area 5"
+        },
+        {
+          "id": 31,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "24": {
+      "name": "Arena with Ledge Night",
+      "stages": [
+        {
+          "id": 46,
+          "area": "Base"
+        },
+        {
+          "id": 90,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "25": {
+      "name": "Arena with Pillar Night",
+      "stages": [
+        {
+          "id": 46,
+          "area": "Base"
+        },
+        {
+          "id": 66,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "26": {
+      "name": "Great Forest Day",
+      "stages": [
+        {
+          "id": 224,
+          "area": "Base"
+        },
+        {
+          "id": 226,
+          "area": "Area 1"
+        },
+        {
+          "id": 228,
+          "area": "Area 2"
+        },
+        {
+          "id": 230,
+          "area": "Area 3"
+        },
+        {
+          "id": 232,
+          "area": "Area 4"
+        },
+        {
+          "id": 234,
+          "area": "Area 5"
+        },
+        {
+          "id": 236,
+          "area": "Area 6"
+        },
+        {
+          "id": 238,
+          "area": "Area 7"
+        },
+        {
+          "id": 240,
+          "area": "Area 8"
+        }
+      ]
+    },
+    "27": {
+      "name": "Great Forest Night",
+      "stages": [
+        {
+          "id": 225,
+          "area": "Base"
+        },
+        {
+          "id": 227,
+          "area": "Area 1"
+        },
+        {
+          "id": 229,
+          "area": "Area 2"
+        },
+        {
+          "id": 231,
+          "area": "Area 3"
+        },
+        {
+          "id": 233,
+          "area": "Area 4"
+        },
+        {
+          "id": 235,
+          "area": "Area 5"
+        },
+        {
+          "id": 237,
+          "area": "Area 6"
+        },
+        {
+          "id": 239,
+          "area": "Area 7"
+        },
+        {
+          "id": 241,
+          "area": "Area 8"
+        }
+      ]
+    },
+    "28": {
+      "name": "Volcano 2 Day",
+      "stages": [
+        {
+          "id": 161,
+          "area": "Base"
+        },
+        {
+          "id": 164,
+          "area": "Area 1"
+        },
+        {
+          "id": 165,
+          "area": "Area 2"
+        },
+        {
+          "id": 166,
+          "area": "Area 3"
+        },
+        {
+          "id": 162,
+          "area": "Area 4"
+        },
+        {
+          "id": 163,
+          "area": "Area 5"
+        },
+        {
+          "id": 168,
+          "area": "Area 6"
+        },
+        {
+          "id": 167,
+          "area": "Area 7"
+        },
+        {
+          "id": 169,
+          "area": "Area 8"
+        },
+        {
+          "id": 222,
+          "area": "Area 10"
+        },
+        {
+          "id": 220,
+          "area": "Area 11"
+        },
+        {
+          "id": 74,
+          "area": "Secret"
+        }
+      ]
+    },
+    "29": {
+      "name": "Volcano 2 Night",
+      "stages": [
+        {
+          "id": 58,
+          "area": "Base"
+        },
+        {
+          "id": 59,
+          "area": "Area 1"
+        },
+        {
+          "id": 60,
+          "area": "Area 2"
+        },
+        {
+          "id": 61,
+          "area": "Area 3"
+        },
+        {
+          "id": 62,
+          "area": "Area 4"
+        },
+        {
+          "id": 63,
+          "area": "Area 5"
+        },
+        {
+          "id": 64,
+          "area": "Area 6"
+        },
+        {
+          "id": 65,
+          "area": "Area 7"
+        },
+        {
+          "id": 221,
+          "area": "Area 9"
+        },
+        {
+          "id": 223,
+          "area": "Area 10"
+        },
+        {
+          "id": 27,
+          "area": "Secret"
+        }
+      ]
+    },
+    "30": {
+      "name": "Jungle Dream",
+      "stages": [
+        {
+          "id": 120,
+          "area": "Base"
+        }
+      ]
+    },
+    "31": {
+      "name": "Gorge Day",
+      "stages": [
+        {
+          "id": 288,
+          "area": "Base"
+        },
+        {
+          "id": 290,
+          "area": "Area 1"
+        },
+        {
+          "id": 292,
+          "area": "Area 2"
+        },
+        {
+          "id": 294,
+          "area": "Area 3"
+        },
+        {
+          "id": 296,
+          "area": "Area 4"
+        },
+        {
+          "id": 298,
+          "area": "Area 5"
+        },
+        {
+          "id": 300,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "32": {
+      "name": "Gorge Night",
+      "stages": [
+        {
+          "id": 289,
+          "area": "Base"
+        },
+        {
+          "id": 291,
+          "area": "Area 1"
+        },
+        {
+          "id": 293,
+          "area": "Area 2"
+        },
+        {
+          "id": 295,
+          "area": "Area 3"
+        },
+        {
+          "id": 297,
+          "area": "Area 4"
+        },
+        {
+          "id": 299,
+          "area": "Area 5"
+        },
+        {
+          "id": 301,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "35": {
+      "name": "Battlefield Day",
+      "stages": [
+        {
+          "id": 8,
+          "area": "Base"
+        },
+        {
+          "id": 197,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "44": {
+      "name": "Top of Great Forest",
+      "stages": [
+        {
+          "id": 245,
+          "area": "Base"
+        },
+        {
+          "id": 246,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "45": {
+      "name": "Caravan Balloon Day",
+      "stages": [
+        {
+          "id": 258,
+          "area": "Base"
+        }
+      ]
+    },
+    "46": {
+      "name": "Caravan Balloon Night",
+      "stages": [
+        {
+          "id": 259,
+          "area": "Base"
+        }
+      ]
+    },
+    "47": {
+      "name": "Solitude Isle 1",
+      "stages": [
+        {
+          "id": 311,
+          "area": "Base"
+        },
+        {
+          "id": 314,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "48": {
+      "name": "Solitude Isle 2",
+      "stages": [
+        {
+          "id": 311,
+          "area": "Base"
+        },
+        {
+          "id": 317,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "49": {
+      "name": "Solitude Isle 3",
+      "stages": [
+        {
+          "id": 311,
+          "area": "Base"
+        },
+        {
+          "id": 320,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "50": {
+      "name": "Highlands Day",
+      "stages": [
+        {
+          "id": 247,
+          "area": "Base"
+        },
+        {
+          "id": 249,
+          "area": "Area 1"
+        },
+        {
+          "id": 251,
+          "area": "Area 2"
+        },
+        {
+          "id": 253,
+          "area": "Area 3"
+        },
+        {
+          "id": 255,
+          "area": "Area 4"
+        },
+        {
+          "id": 303,
+          "area": "Area 5"
+        },
+        {
+          "id": 305,
+          "area": "Area 6"
+        },
+        {
+          "id": 307,
+          "area": "Area 7"
+        }
+      ]
+    },
+    "51": {
+      "name": "Highlands Night",
+      "stages": [
+        {
+          "id": 248,
+          "area": "Base"
+        },
+        {
+          "id": 250,
+          "area": "Area 1"
+        },
+        {
+          "id": 252,
+          "area": "Area 2"
+        },
+        {
+          "id": 254,
+          "area": "Area 3"
+        },
+        {
+          "id": 302,
+          "area": "Area 4"
+        },
+        {
+          "id": 304,
+          "area": "Area 5"
+        },
+        {
+          "id": 306,
+          "area": "Area 6"
+        },
+        {
+          "id": 308,
+          "area": "Area 7"
+        }
+      ]
+    },
+    "52": {
+      "name": "Tower with Nesthole",
+      "stages": [
+        {
+          "id": 121,
+          "area": "Base"
+        },
+        {
+          "id": 122,
+          "area": "Area 1"
+        },
+        {
+          "id": 123,
+          "area": "Area 2"
+        },
+        {
+          "id": 130,
+          "area": "Area 3"
+        },
+        {
+          "id": 128,
+          "area": "Area 4"
+        },
+        {
+          "id": 129,
+          "area": "Area 5"
+        },
+        {
+          "id": 127,
+          "area": "Area 6"
+        },
+        {
+          "id": 125,
+          "area": "Area 7"
+        },
+        {
+          "id": 126,
+          "area": "Area 8"
+        },
+        {
+          "id": 139,
+          "area": "Area 9"
+        }
+      ]
+    },
+    "53": {
+      "name": "Arena with Moat Day",
+      "stages": [
+        {
+          "id": 280,
+          "area": "Base"
+        },
+        {
+          "id": 13,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "54": {
+      "name": "Arena with Moat Night",
+      "stages": [
+        {
+          "id": 281,
+          "area": "Base"
+        },
+        {
+          "id": 17,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "55": {
+      "name": "Fortress Day",
+      "stages": [
+        {
+          "id": 272,
+          "area": "Base"
+        },
+        {
+          "id": 274,
+          "area": "Area 1"
+        },
+        {
+          "id": 276,
+          "area": "Area 2"
+        },
+        {
+          "id": 278,
+          "area": "Area 3"
+        }
+      ]
+    },
+    "56": {
+      "name": "Fortress Night",
+      "stages": [
+        {
+          "id": 273,
+          "area": "Base"
+        },
+        {
+          "id": 275,
+          "area": "Area 1"
+        },
+        {
+          "id": 277,
+          "area": "Area 2"
+        },
+        {
+          "id": 279,
+          "area": "Area 3"
+        }
+      ]
+    },
+    "57": {
+      "name": "Tidal Island Day",
+      "stages": [
+        {
+          "id": 322,
+          "area": "Base"
+        },
+        {
+          "id": 323,
+          "area": "Area 1"
+        },
+        {
+          "id": 324,
+          "area": "Area 2"
+        },
+        {
+          "id": 325,
+          "area": "Area 3"
+        },
+        {
+          "id": 334,
+          "area": "Area 4"
+        },
+        {
+          "id": 335,
+          "area": "Area 5"
+        }
+      ]
+    },
+    "58": {
+      "name": "Tidal Island Night",
+      "stages": [
+        {
+          "id": 330,
+          "area": "Base"
+        },
+        {
+          "id": 331,
+          "area": "Area 1"
+        },
+        {
+          "id": 332,
+          "area": "Area 2"
+        },
+        {
+          "id": 333,
+          "area": "Area 3"
+        },
+        {
+          "id": 338,
+          "area": "Area 4"
+        },
+        {
+          "id": 339,
+          "area": "Area 5"
+        }
+      ]
+    },
+    "60": {
+      "name": "Polar Sea Day",
+      "stages": [
+        {
+          "id": 345,
+          "area": "Base"
+        },
+        {
+          "id": 347,
+          "area": "Area 1"
+        },
+        {
+          "id": 349,
+          "area": "Area 2"
+        },
+        {
+          "id": 351,
+          "area": "Area 3"
+        },
+        {
+          "id": 353,
+          "area": "Area 4"
+        },
+        {
+          "id": 355,
+          "area": "Area 5"
+        },
+        {
+          "id": 357,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "61": {
+      "name": "Polar Sea Night",
+      "stages": [
+        {
+          "id": 346,
+          "area": "Base"
+        },
+        {
+          "id": 348,
+          "area": "Area 1"
+        },
+        {
+          "id": 350,
+          "area": "Area 2"
+        },
+        {
+          "id": 352,
+          "area": "Area 3"
+        },
+        {
+          "id": 354,
+          "area": "Area 4"
+        },
+        {
+          "id": 356,
+          "area": "Area 5"
+        },
+        {
+          "id": 358,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "62": {
+      "name": "World's End",
+      "stages": [
+        {
+          "id": 359,
+          "area": "Base"
+        },
+        {
+          "id": 360,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "63": {
+      "name": "Large Airship",
+      "stages": [
+        {
+          "id": 342,
+          "area": "Base"
+        },
+        {
+          "id": 343,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "64": {
+      "name": "Flower Field Day",
+      "stages": [
+        {
+          "id": 361,
+          "area": "Base"
+        },
+        {
+          "id": 363,
+          "area": "Area 1"
+        },
+        {
+          "id": 365,
+          "area": "Area 2"
+        },
+        {
+          "id": 367,
+          "area": "Area 3"
+        },
+        {
+          "id": 369,
+          "area": "Area 4"
+        },
+        {
+          "id": 371,
+          "area": "Area 5"
+        }
+      ]
+    },
+    "65": {
+      "name": "Flower Field Night",
+      "stages": [
+        {
+          "id": 362,
+          "area": "Base"
+        },
+        {
+          "id": 364,
+          "area": "Area 1"
+        },
+        {
+          "id": 366,
+          "area": "Area 2"
+        },
+        {
+          "id": 368,
+          "area": "Area 3"
+        },
+        {
+          "id": 370,
+          "area": "Area 4"
+        },
+        {
+          "id": 372,
+          "area": "Area 5"
+        }
+      ]
+    },
+    "66": {
+      "name": "Deep Crater",
+      "stages": [
+        {
+          "id": 374,
+          "area": "Area 1"
+        },
+        {
+          "id": 380,
+          "area": "Base"
+        }
+      ]
+    },
+    "67": {
+      "name": "Bamboo Forest Day",
+      "stages": [
+        {
+          "id": 375,
+          "area": "Base"
+        },
+        {
+          "id": 377,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "68": {
+      "name": "Bamboo Forest Night",
+      "stages": [
+        {
+          "id": 376,
+          "area": "Base"
+        },
+        {
+          "id": 378,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "69": {
+      "name": "Battlefield 2 Day",
+      "stages": [
+        {
+          "id": 8,
+          "area": "Base"
+        },
+        {
+          "id": 396,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "71": {
+      "name": "1st Dist Tower 1",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "72": {
+      "name": "1st Dist Tower 2",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "73": {
+      "name": "2nd Dist Tower 1",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 414,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "74": {
+      "name": "2nd Dist Tower 2",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 414,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "75": {
+      "name": "Urgent Tower",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "76": {
+      "name": "3rd Dist Tower 1",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "77": {
+      "name": "3rd Dist Tower 2",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "78": {
+      "name": "4th Dist Tower",
+      "stages": [
+        {
+          "id": 391,
+          "area": "Base"
+        },
+        {
+          "id": 392,
+          "area": "Area 1"
+        },
+        {
+          "id": 399,
+          "area": "Area 2"
+        }
+      ]
+    },
+    "79": {
+      "name": "White Lake Day",
+      "stages": [
+        {
+          "id": 400,
+          "area": "Base"
+        },
+        {
+          "id": 402,
+          "area": "Area 1"
+        },
+        {
+          "id": 404,
+          "area": "Area 2"
+        },
+        {
+          "id": 406,
+          "area": "Area 3"
+        },
+        {
+          "id": 408,
+          "area": "Area 4"
+        },
+        {
+          "id": 410,
+          "area": "Area 5"
+        },
+        {
+          "id": 412,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "80": {
+      "name": "White Lake Night",
+      "stages": [
+        {
+          "id": 401,
+          "area": "Base"
+        },
+        {
+          "id": 403,
+          "area": "Area 1"
+        },
+        {
+          "id": 405,
+          "area": "Area 2"
+        },
+        {
+          "id": 407,
+          "area": "Area 3"
+        },
+        {
+          "id": 409,
+          "area": "Area 4"
+        },
+        {
+          "id": 411,
+          "area": "Area 5"
+        },
+        {
+          "id": 413,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "81": {
+      "name": "Solitude Depths Slay 1",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        },
+        {
+          "id": 418,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "82": {
+      "name": "Solitude Depths Slay 2",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "83": {
+      "name": "Solitude Depths Slay 3",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "84": {
+      "name": "Solitude Depths Slay 4",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "85": {
+      "name": "Solitude Depths Slay 5",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "86": {
+      "name": "Solitude Depths Support 1",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        },
+        {
+          "id": 440,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "87": {
+      "name": "Solitude Depths Support 2",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "88": {
+      "name": "Solitude Depths Support 3",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "89": {
+      "name": "Solitude Depths Support 4",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "90": {
+      "name": "Solitude Depths Support 5",
+      "stages": [
+        {
+          "id": 417,
+          "area": "Base"
+        }
+      ]
+    },
+    "91": {
+      "name": "Cloud Viewing Fortress",
+      "stages": [
+        {
+          "id": 438,
+          "area": "Base"
+        },
+        {
+          "id": 439,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "92": {
+      "name": "Painted Falls Day",
+      "stages": [
+        {
+          "id": 423,
+          "area": "Base"
+        },
+        {
+          "id": 425,
+          "area": "Area 1"
+        },
+        {
+          "id": 427,
+          "area": "Area 2"
+        },
+        {
+          "id": 429,
+          "area": "Area 3"
+        },
+        {
+          "id": 431,
+          "area": "Area 4"
+        },
+        {
+          "id": 433,
+          "area": "Area 5"
+        },
+        {
+          "id": 435,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "93": {
+      "name": "Painted Falls Nigh",
+      "stages": [
+        {
+          "id": 424,
+          "area": "Base"
+        },
+        {
+          "id": 426,
+          "area": "Area 1"
+        },
+        {
+          "id": 428,
+          "area": "Area 2"
+        },
+        {
+          "id": 430,
+          "area": "Area 3"
+        },
+        {
+          "id": 432,
+          "area": "Area 4"
+        },
+        {
+          "id": 434,
+          "area": "Area 5"
+        },
+        {
+          "id": 436,
+          "area": "Area 6"
+        }
+      ]
+    },
+    "94": {
+      "name": "Sanctuary",
+      "stages": [
+        {
+          "id": 448,
+          "area": "Base"
+        },
+        {
+          "id": 449,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "95": {
+      "name": "Hunter's Road",
+      "stages": [
+        {
+          "id": 459,
+          "area": "Base"
+        }
+      ]
+    },
+    "96": {
+      "name": "Sacred Pinnacle",
+      "stages": [
+        {
+          "id": 446,
+          "area": "Base"
+        },
+        {
+          "id": 447,
+          "area": "Area 1"
+        }
+      ]
+    },
+    "97": {
+      "name": "Historic Site",
+      "stages": [
+        {
+          "id": 460,
+          "area": "Base"
+        },
+        {
+          "id": 461,
+          "area": "Area 1"
+        }
+      ]
+    }
+  }
+}

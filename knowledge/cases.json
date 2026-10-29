@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "Regression examples do not limit corpus search",
+  "cases": [
+    {
+      "quest_ids": [
+        65018,
+        65026
+      ],
+      "topic": "Toa and area changes",
+      "evidence": "The user reports completion of the Polar Sea test and migration after roughly five minutes; stalls were observed with other bases",
+      "limits": "The test supports the migration hypothesis; the AI has not been decompiled. The Tower rebuilt from 65016 needs a separate test."
+    },
+    {
+      "quest_ids": [
+        65016,
+        65026
+      ],
+      "topic": "Tower map package",
+      "evidence": "An identical map ID does not guarantee lower-area availability; the requested base contains Teostra/Lunastra/Rukodiora",
+      "rule": "Preserve the map package and use the Rukodiora spawn as a terrain reference, not proof of Toa AI compatibility"
+    },
+    {
+      "quest_ids": [
+        21982
+      ],
+      "topic": "Native repel",
+      "evidence": "Reference requested for comparison",
+      "limits": "Do not infer animation or timers from the Damage threshold alone"
+    },
+    {
+      "quest_ids": [
+        65013
+      ],
+      "topic": "Loading crashes and spawns",
+      "evidence": "The user reports both crashing and non-crashing variants",
+      "limits": "A server EOF does not identify the client-side cause; compare exact revisions and granular tests"
+    }
+  ]
+}

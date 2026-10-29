@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mhfrontier-cq-tool-ai"
+version = "0.2.0b12"
+description = "MHFrontier CQ Editor AI authoring engine and development CLI"
+requires-python = ">=3.11"
+authors = [{name = "mrsasy89"}]
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+include = ["mhfz_builder*"]
+
+[project.scripts]
+quest-builder = "mhfz_builder.cli:main"
+
+[tool.setuptools.package-data]
+mhfz_builder = ["data/*.json"]
